@@ -27,6 +27,84 @@ $ composer require laratrade/trader
 
 ## Usage
 
+Via dependency injection
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+class MyClass
+{
+    /**
+     * The trader instance.
+     *
+     * @var Trader
+     */
+    protected $trader;
+
+    /**
+     * Create a new instance.
+     *
+     * @param Trader $trader
+     */
+    public function __construct(Trader $trader)
+    {
+        $this->indicatorManager = $trader;
+    }
+    
+    /**
+     * Handle my function.
+     */
+    public function myFunction()
+    {
+        ...
+        $acos = $this->trader->acos($real);
+        ...
+    }
+}
+```
+
+Via facade
+
+``` php
+<?php
+
+use Laratrade\Trader\Facades\Trader;
+
+class MyClass
+{   
+    /**
+     * Handle my function.
+     */
+    public function myFunction()
+    {
+        ...
+        $acos = Trader::acos($real);
+        ...
+    }
+}
+```
+
+Via helper
+
+``` php
+<?php
+
+class MyClass
+{   
+    /**
+     * Handle my function.
+     */
+    public function myFunction()
+    {
+        ...
+        $acos = trader()->acos($real);
+        ...
+    }
+}
+```
+
 ## Testing
 
 ``` bash
