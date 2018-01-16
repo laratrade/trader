@@ -1,0 +1,66 @@
+{
+    "name": "laratrade/trader",
+    "type": "library",
+    "description": "Laravel package for trader extension interface.",
+    "keywords": [
+        "laravel",
+        "trader"
+    ],
+    "homepage": "https://github.com/laratrade/trader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgenii Nasyrov",
+            "email": "inasyrov@ya.ru",
+            "homepage": "https://github.com/nasyrov",
+            "role": "Developer"
+        },
+        {
+            "name": "Patrick Teunissen",
+            "email": "patrick@yiiandme.com",
+            "homepage": "https://github.com/amavis442",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-trader": "*",
+        "illuminate/support": "5.5.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.5",
+        "phpunit/phpunit": "~6.5",
+        "squizlabs/php_codesniffer": "~3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laratrade\\Trader\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laratrade\\Trader\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs -p --standard=psr2 src",
+        "phpunit": "phpunit",
+        "phpunit-integration": "phpunit --testsuite Integration",
+        "phpunit-unit": "phpunit --testsuite Unit",
+        "phpunit-coverage": "phpunit --coverage-clover=coverage.clover",
+        "test": [
+            "@lint",
+            "@phpunit"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laratrade\\Trader\\TraderServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
