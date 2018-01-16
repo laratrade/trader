@@ -1,10 +1,10 @@
 <?php
 
-
 namespace Laratrade\Trader\Tests\Unit;
 
+use PHPUnit\Framework\TestCase as BaseTestCase;
 
-class TraderTest
+abstract class TestCase extends BaseTestCase
 {
-
+    //
 }
