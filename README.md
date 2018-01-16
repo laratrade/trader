@@ -7,14 +7,14 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Laravel package for PHP trader.
+Laravel package for trader extension interface.
 
 ## Requirements
 
 Make sure all dependencies have been installed before moving on:
 
 * [PHP](http://php.net/manual/en/install.php) >= 7.0
-* [PECL Trader](http://php.net/manual/en/trader.installation.php)
+* [Trader](http://php.net/manual/en/trader.installation.php)
 * [Composer](https://getcomposer.org/download/)
 
 ## Install
