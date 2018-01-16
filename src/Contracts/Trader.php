@@ -2,6 +2,13 @@
 
 namespace Laratrade\Trader\Contracts;
 
+/**
+ * Interface Trader
+ * @package Laratrade\Trader\Contracts
+ *
+ * phpcs:disable Generic.Files.LineLength
+ * phpcs:disable PSR1.Methods.CamelCapsMethodName
+ */
 interface Trader
 {
     const MA_TYPE_SMA = 0;
