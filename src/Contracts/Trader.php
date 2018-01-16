@@ -1729,7 +1729,7 @@ interface Trader
      *
      * @param int $compatId Compatibility Id. TRADER_COMPATIBILITY_* series of constants should be used.
      */
-    public static function set_compat(integer $compatId);
+    public static function set_compat(int $compatId);
 
     /**
      * Set unstable period.
@@ -1739,7 +1739,7 @@ interface Trader
      * @param int $functionId Function ID the factor should be set for. FUNC_UNST_* constant series can be used to affect the corresponding function.
      * @param int $timePeriod Unstable period value.
      */
-    public static function set_unstable_period(integer $functionId, int $timePeriod);
+    public static function set_unstable_period(int $functionId, int $timePeriod);
 
     /**
      * Vector Trigonometric Sin.
