@@ -9,7 +9,7 @@ namespace Laratrade\Trader\Contracts;
  * phpcs:disable Generic.Files.LineLength
  * phpcs:disable PSR1.Methods.CamelCapsMethodName
  */
-trait MagicCalls
+trait CallsFunctions
 {
     /**
      * Vector Trigonometric ACos.
@@ -22,7 +22,11 @@ trait MagicCalls
      */
     public function acos(array $real): array
     {
-        return trader_acos($real);
+        $result = trader_acos($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -37,7 +41,11 @@ trait MagicCalls
      */
     public function ad(array $high, array $low, array $close, array $volume): array
     {
-        return trader_ad($high, $low, $close, $volume);
+        $result = trader_ad($high, $low, $close, $volume);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -52,7 +60,11 @@ trait MagicCalls
      */
     public function add(array $real0, array $real1): array
     {
-        return trader_add($real0, $real1);
+        $result = trader_add($real0, $real1);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -75,7 +87,11 @@ trait MagicCalls
         int $fastPeriod = 3,
         int $slowPeriod = 10
     ): array {
-        return trader_adosc($high, $low, $close, $volume, $fastPeriod, $slowPeriod);
+        $result = trader_adosc($high, $low, $close, $volume, $fastPeriod, $slowPeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -90,7 +106,11 @@ trait MagicCalls
      */
     public function adx(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return trader_adx($high, $low, $close, $timePeriod);
+        $result = trader_adx($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -105,7 +125,11 @@ trait MagicCalls
      */
     public function adxr(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return trader_adxr($high, $low, $close, $timePeriod);
+        $result = trader_adxr($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -120,7 +144,11 @@ trait MagicCalls
      */
     public function apo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array
     {
-        return trader_adxr($real, $fastPeriod, $slowPeriod, $mAType);
+        $result = trader_adxr($real, $fastPeriod, $slowPeriod, $mAType);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -134,7 +162,11 @@ trait MagicCalls
      */
     public function aroon(array $high, array $low, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_aroon($high, $low, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -148,7 +180,11 @@ trait MagicCalls
      */
     public function aroonosc(array $high, array $low, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_aroonosc($high, $low, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -160,7 +196,11 @@ trait MagicCalls
      */
     public function asin(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_asin($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -172,7 +212,11 @@ trait MagicCalls
      */
     public function atan(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_atan($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -187,7 +231,11 @@ trait MagicCalls
      */
     public function atr(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_atr($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -202,7 +250,11 @@ trait MagicCalls
      */
     public function avgprice(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_avgprice($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -223,7 +275,11 @@ trait MagicCalls
         float $nbDevDn = 2.0,
         int $mAType = 0
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_bbands($real, $timePeriod, $nbDevUp, $nbDevDn, $mAType);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -237,7 +293,11 @@ trait MagicCalls
      */
     public function beta(array $real0, array $real1, int $timePeriod = 5): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_beta($real0, $real1, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -252,7 +312,11 @@ trait MagicCalls
      */
     public function bop(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_bop($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -267,7 +331,11 @@ trait MagicCalls
      */
     public function cci(array $high, array $low, array $close, int $timePeriod = null): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cci($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -282,7 +350,11 @@ trait MagicCalls
      */
     public function cdl2crows(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cci($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -297,7 +369,11 @@ trait MagicCalls
      */
     public function cdl3blackcrows(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdl3blackcrows($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -312,7 +388,11 @@ trait MagicCalls
      */
     public function cdl3inside(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdl3inside($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -327,7 +407,11 @@ trait MagicCalls
      */
     public function cdl3linestrike(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdl3linestrike($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -342,7 +426,11 @@ trait MagicCalls
      */
     public function cdl3outside(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdl3outside($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -357,7 +445,11 @@ trait MagicCalls
      */
     public function cdl3starsinsouth(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdl3starsinsouth($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -372,7 +464,11 @@ trait MagicCalls
      */
     public function cdl3whitesoldiers(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdl3whitesoldiers($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -393,7 +489,11 @@ trait MagicCalls
         array $close,
         float $penetration = 0.3
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlabandonedbaby($open, $high, $low, $close, $penetration);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -408,7 +508,11 @@ trait MagicCalls
      */
     public function cdladvanceblock(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdladvanceblock($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -423,7 +527,11 @@ trait MagicCalls
      */
     public function cdlbelthold(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlbelthold($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -438,7 +546,11 @@ trait MagicCalls
      */
     public function cdlbreakaway(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlbreakaway($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -453,7 +565,11 @@ trait MagicCalls
      */
     public function cdlclosingmarubozu(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlclosingmarubozu($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -468,7 +584,11 @@ trait MagicCalls
      */
     public function cdlconcealbabyswall(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlconcealbabyswall($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -483,7 +603,11 @@ trait MagicCalls
      */
     public function cdlcounterattack(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlcounterattack($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -504,7 +628,11 @@ trait MagicCalls
         array $close,
         float $penetration = 0.5
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdldarkcloudcover($open, $high, $low, $close, $penetration);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -519,7 +647,11 @@ trait MagicCalls
      */
     public function cdldoji(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdldoji($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -534,7 +666,11 @@ trait MagicCalls
      */
     public function cdldojistar(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdldojistar($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -549,7 +685,11 @@ trait MagicCalls
      */
     public function cdldragonflydoji(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdldragonflydoji($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -564,7 +704,11 @@ trait MagicCalls
      */
     public function cdlengulfing(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlengulfing($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -585,7 +729,11 @@ trait MagicCalls
         array $close,
         float $penetration = 0.3
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdleveningdojistar($open, $high, $low, $close, $penetration);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -606,7 +754,11 @@ trait MagicCalls
         array $close,
         float $penetration = 0.3
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdleveningstar($open, $high, $low, $close, $penetration);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -621,7 +773,11 @@ trait MagicCalls
      */
     public function cdlgapsidesidewhite(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlgapsidesidewhite($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -636,7 +792,11 @@ trait MagicCalls
      */
     public function cdlgravestonedoji(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlgravestonedoji($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -651,7 +811,11 @@ trait MagicCalls
      */
     public function cdlhammer(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlhammer($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -666,7 +830,11 @@ trait MagicCalls
      */
     public function cdlhangingman(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlhangingman($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -681,7 +849,11 @@ trait MagicCalls
      */
     public function cdlharami(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlharami($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -696,7 +868,11 @@ trait MagicCalls
      */
     public function cdlharamicross(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlharamicross($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -711,7 +887,11 @@ trait MagicCalls
      */
     public function cdlhighwave(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlhighwave($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -726,7 +906,11 @@ trait MagicCalls
      */
     public function cdlhikkake(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlhikkake($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -741,7 +925,11 @@ trait MagicCalls
      */
     public function cdlhikkakemod(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlhikkakemod($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -756,7 +944,11 @@ trait MagicCalls
      */
     public function cdlhomingpigeon(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlhomingpigeon($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -771,7 +963,11 @@ trait MagicCalls
      */
     public function cdlidentical3crows(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlidentical3crows($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -786,7 +982,11 @@ trait MagicCalls
      */
     public function cdlinneck(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlinneck($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -801,7 +1001,11 @@ trait MagicCalls
      */
     public function cdlinvertedhammer(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlinvertedhammer($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -816,7 +1020,11 @@ trait MagicCalls
      */
     public function cdlkicking(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlkicking($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -831,7 +1039,11 @@ trait MagicCalls
      */
     public function cdlkickingbylength(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlkickingbylength($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -846,7 +1058,11 @@ trait MagicCalls
      */
     public function cdlladderbottom(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlladderbottom($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -861,7 +1077,11 @@ trait MagicCalls
      */
     public function cdllongleggeddoji(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdllongleggeddoji($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -876,7 +1096,11 @@ trait MagicCalls
      */
     public function cdllongline(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdllongline($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -891,7 +1115,11 @@ trait MagicCalls
      */
     public function cdlmarubozu(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlmarubozu($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -906,7 +1134,11 @@ trait MagicCalls
      */
     public function cdlmatchinglow(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlmatchinglow($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -927,7 +1159,11 @@ trait MagicCalls
         array $close,
         float $penetration = 0.5
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlmathold($open, $high, $low, $close, $penetration);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -948,7 +1184,11 @@ trait MagicCalls
         array $close,
         float $penetration = 0.3
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlmorningdojistar($open, $high, $low, $close, $penetration);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -969,7 +1209,11 @@ trait MagicCalls
         array $close,
         float $penetration = 0.3
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlmorningstar($open, $high, $low, $close, $penetration);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -984,7 +1228,11 @@ trait MagicCalls
      */
     public function cdlonneck(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlonneck($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -999,7 +1247,11 @@ trait MagicCalls
      */
     public function cdlpiercing(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlpiercing($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1014,7 +1266,11 @@ trait MagicCalls
      */
     public function cdlrickshawman(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlrickshawman($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1029,7 +1285,11 @@ trait MagicCalls
      */
     public function cdlrisefall3methods(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlrisefall3methods($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1044,7 +1304,11 @@ trait MagicCalls
      */
     public function cdlseparatinglines(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlseparatinglines($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1059,7 +1323,11 @@ trait MagicCalls
      */
     public function cdlshootingstar(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlshootingstar($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1074,7 +1342,11 @@ trait MagicCalls
      */
     public function cdlshortline(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlshortline($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1089,7 +1361,11 @@ trait MagicCalls
      */
     public function cdlspinningtop(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlspinningtop($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1104,7 +1380,11 @@ trait MagicCalls
      */
     public function cdlstalledpattern(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlstalledpattern($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1119,7 +1399,11 @@ trait MagicCalls
      */
     public function cdlsticksandwich(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlsticksandwich($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1134,7 +1418,11 @@ trait MagicCalls
      */
     public function cdltakuri(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdltakuri($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1149,7 +1437,11 @@ trait MagicCalls
      */
     public function cdltasukigap(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdltasukigap($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1164,7 +1456,11 @@ trait MagicCalls
      */
     public function cdlthrusting(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlthrusting($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1179,7 +1475,11 @@ trait MagicCalls
      */
     public function cdltristar(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdltristar($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1194,7 +1494,11 @@ trait MagicCalls
      */
     public function cdlunique3river(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlunique3river($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1209,7 +1513,11 @@ trait MagicCalls
      */
     public function cdlupsidegap2crows(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlupsidegap2crows($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1224,7 +1532,11 @@ trait MagicCalls
      */
     public function cdlxsidegap3methods(array $open, array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cdlxsidegap3methods($open, $high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1238,7 +1550,11 @@ trait MagicCalls
      */
     public function ceil(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ceil($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1251,7 +1567,11 @@ trait MagicCalls
      */
     public function cmo(array $real, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cmo($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1265,7 +1585,11 @@ trait MagicCalls
      */
     public function correl(array $real0, array $real1, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_correl($real0, $real1, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1279,7 +1603,11 @@ trait MagicCalls
      */
     public function cos(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cos($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1293,7 +1621,11 @@ trait MagicCalls
      */
     public function cosh(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_cosh($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1306,7 +1638,11 @@ trait MagicCalls
      */
     public function dema(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_dema($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1321,7 +1657,11 @@ trait MagicCalls
      */
     public function div(array $real0, array $real1): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_dema($real0, $real1);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1336,7 +1676,11 @@ trait MagicCalls
      */
     public function dx(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_dx($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1349,7 +1693,11 @@ trait MagicCalls
      */
     public function ema(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ema($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1361,7 +1709,7 @@ trait MagicCalls
      */
     public function errno(): int
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_errno();
     }
 
     /**
@@ -1375,7 +1723,11 @@ trait MagicCalls
      */
     public function exp(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_exp($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1389,7 +1741,11 @@ trait MagicCalls
      */
     public function floor(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_floor($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1401,7 +1757,7 @@ trait MagicCalls
      */
     public function get_compat(): int
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_get_compat();
     }
 
     /**
@@ -1415,7 +1771,7 @@ trait MagicCalls
      */
     public function get_unstable_period(int $functionId): int
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_get_unstable_period();
     }
 
     /**
@@ -1427,7 +1783,11 @@ trait MagicCalls
      */
     public function ht_dcperiod(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ht_dcperiod($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1439,7 +1799,11 @@ trait MagicCalls
      */
     public function ht_dcphase(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ht_dcphase($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1452,7 +1816,11 @@ trait MagicCalls
      */
     public function ht_phasor(array $open, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ht_phasor($open, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1465,7 +1833,11 @@ trait MagicCalls
      */
     public function ht_sine(array $open, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ht_sine($open, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1477,7 +1849,11 @@ trait MagicCalls
      */
     public function ht_trendline(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ht_trendline($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1489,7 +1865,11 @@ trait MagicCalls
      */
     public function ht_trendmode(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ht_trendmode($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1502,7 +1882,11 @@ trait MagicCalls
      */
     public function kama(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_kama($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1515,7 +1899,11 @@ trait MagicCalls
      */
     public function linearreg_angle(array $real, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_linearreg_angle($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1528,7 +1916,11 @@ trait MagicCalls
      */
     public function linearreg_intercept(array $real, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_linearreg_intercept($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1541,7 +1933,11 @@ trait MagicCalls
      */
     public function linearreg_slope(array $real, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_linearreg_slope($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1554,7 +1950,11 @@ trait MagicCalls
      */
     public function linearreg(array $real, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_linearreg($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1568,7 +1968,11 @@ trait MagicCalls
      */
     public function ln(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ln($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1582,7 +1986,11 @@ trait MagicCalls
      */
     public function log10(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_log10($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1596,7 +2004,11 @@ trait MagicCalls
      */
     public function ma(array $real, int $timePeriod = 30, int $mAType = 0): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ma($real, $timePeriod, $mAType);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1615,7 +2027,11 @@ trait MagicCalls
         int $slowPeriod = 26,
         int $signalPeriod = 9
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_macd($real, $fastPeriod, $slowPeriod, $signalPeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1638,7 +2054,11 @@ trait MagicCalls
         int $slowMAType = 0,
         int $signalPeriod = 9
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_macdext($real, $fastPeriod, $fastMAType, $slowPeriod, $slowMAType, $signalPeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1651,7 +2071,11 @@ trait MagicCalls
      */
     public function macdfix(array $real, int $signalPeriod = 9): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_macdfix($real, $signalPeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1665,7 +2089,11 @@ trait MagicCalls
      */
     public function mama(array $real, float $fastLimit = 0.5, float $slowLimit = 0.05): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_mama($real, $fastLimit, $slowLimit);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1686,7 +2114,11 @@ trait MagicCalls
         int $maxPeriod = 30,
         int $mAType = 0
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_mavp($real, $periods, $minPeriod, $maxPeriod, $mAType);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1699,7 +2131,11 @@ trait MagicCalls
      */
     public function max(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_max($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1712,7 +2148,11 @@ trait MagicCalls
      */
     public function maxindex(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_maxindex($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1725,7 +2165,11 @@ trait MagicCalls
      */
     public function medprice(array $high, array $low): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_medprice($high, $low);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1741,7 +2185,11 @@ trait MagicCalls
      */
     public function mfi(array $high, array $low, array $close, array $volume, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_mfi($high, $low, $close, $volume, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1754,7 +2202,11 @@ trait MagicCalls
      */
     public function midpoint(array $real, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_midpoint($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1768,7 +2220,11 @@ trait MagicCalls
      */
     public function midprice(array $high, array $low, int $timePeriod = 14)
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_midpoint($high, $low, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1781,7 +2237,11 @@ trait MagicCalls
      */
     public function min(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_min($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1794,7 +2254,11 @@ trait MagicCalls
      */
     public function minindex(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_minindex($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1807,7 +2271,11 @@ trait MagicCalls
      */
     public function minmax(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_minmax($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1820,7 +2288,11 @@ trait MagicCalls
      */
     public function minmaxindex(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_minmaxindex($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1835,7 +2307,11 @@ trait MagicCalls
      */
     public function minus_di(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_minus_di($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1849,7 +2325,11 @@ trait MagicCalls
      */
     public function minus_dm(array $high, array $low, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_minus_dm($high, $low, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1862,7 +2342,11 @@ trait MagicCalls
      */
     public function mom(array $real, int $timePeriod = 10): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_mom($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1877,7 +2361,11 @@ trait MagicCalls
      */
     public function mult(array $real0, array $real1): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_mult($real0, $real1);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1892,7 +2380,11 @@ trait MagicCalls
      */
     public function natr(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_natr($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1905,7 +2397,11 @@ trait MagicCalls
      */
     public function obv(array $real, array $volume): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_obv($real, $volume);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1920,7 +2416,11 @@ trait MagicCalls
      */
     public function plus_di(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_plus_di($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1934,7 +2434,11 @@ trait MagicCalls
      */
     public function plus_dm(array $high, array $low, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_plus_di($high, $low, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1949,7 +2453,11 @@ trait MagicCalls
      */
     public function ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_plus_di($real, $fastPeriod, $slowPeriod, $mAType);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1962,7 +2470,11 @@ trait MagicCalls
      */
     public function roc(array $real, int $timePeriod = 10): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_roc($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1975,7 +2487,11 @@ trait MagicCalls
      */
     public function rocp(array $real, int $timePeriod = 10): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_rocp($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -1988,7 +2504,11 @@ trait MagicCalls
      */
     public function rocr100(array $real, int $timePeriod = 10): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_rocr100($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2001,7 +2521,11 @@ trait MagicCalls
      */
     public function rocr(array $real, int $timePeriod = 10): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_rocr($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2014,7 +2538,11 @@ trait MagicCalls
      */
     public function rsi(array $real, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_rocr($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2029,7 +2557,11 @@ trait MagicCalls
      */
     public function sar(array $high, array $low, float $acceleration = 0.02, float $maximum = 0.2): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_sar($high, $low, $acceleration, $maximum);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2060,7 +2592,22 @@ trait MagicCalls
         float $accelerationShort = 0.02,
         float $accelerationMaxShort = 0.2
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_sarext(
+            $high,
+            $low,
+            $startValue,
+            $offsetOnReverse,
+            $accelerationInitLong,
+            $accelerationLong,
+            $accelerationMaxLong,
+            $accelerationInitShort,
+            $accelerationShort,
+            $accelerationMaxShort
+        );
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2099,7 +2646,11 @@ trait MagicCalls
      */
     public function sin(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_sin($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2113,7 +2664,11 @@ trait MagicCalls
      */
     public function sinh(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_sinh($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2126,7 +2681,11 @@ trait MagicCalls
      */
     public function sma(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_sma($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2140,7 +2699,11 @@ trait MagicCalls
      */
     public function sqrt(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_sqrt($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2154,7 +2717,11 @@ trait MagicCalls
      */
     public function stddev(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_stddev($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2181,7 +2748,20 @@ trait MagicCalls
         int $slowD_Period = 3,
         int $slowD_MAType = 0
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_stoch(
+            $high,
+            $low,
+            $close,
+            $fastK_Period,
+            $slowK_Period,
+            $slowK_MAType,
+            $slowD_Period,
+            $slowD_MAType
+        );
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2204,7 +2784,18 @@ trait MagicCalls
         int $fastD_Period = 3,
         int $fastD_MAType = 0
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_stochf(
+            $high,
+            $low,
+            $close,
+            $fastK_Period,
+            $fastD_Period,
+            $fastD_MAType
+        );
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2225,7 +2816,17 @@ trait MagicCalls
         int $fastD_Period = 3,
         int $fastD_MAType = 0
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_stochrsi(
+            $real,
+            $timePeriod,
+            $fastK_Period,
+            $fastD_Period,
+            $fastD_MAType
+        );
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2240,7 +2841,11 @@ trait MagicCalls
      */
     public function sub(array $real0, array $real1): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_sub($real0, $real1);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2253,7 +2858,11 @@ trait MagicCalls
      */
     public function sum(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_sum($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2267,7 +2876,11 @@ trait MagicCalls
      */
     public function t3(array $real, int $timePeriod = 5, float $vFactor = 0.7): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_t3($real, $timePeriod, $vFactor);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2281,7 +2894,11 @@ trait MagicCalls
      */
     public function tan(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_tan($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2295,7 +2912,11 @@ trait MagicCalls
      */
     public function tanh(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_tanh($real);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2308,7 +2929,11 @@ trait MagicCalls
      */
     public function tema(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_tema($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2322,7 +2947,11 @@ trait MagicCalls
      */
     public function trange(array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_trange($high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2335,7 +2964,11 @@ trait MagicCalls
      */
     public function trima(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_trima($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2348,7 +2981,11 @@ trait MagicCalls
      */
     public function trix(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_trix($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2361,7 +2998,11 @@ trait MagicCalls
      */
     public function tsf(array $real, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_tsf($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2375,7 +3016,11 @@ trait MagicCalls
      */
     public function typprice(array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_typprice($high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2398,7 +3043,11 @@ trait MagicCalls
         int $timePeriod2 = 14,
         int $timePeriod3 = 28
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_ultosc($high, $low, $close, $timePeriod1, $timePeriod2, $timePeriod3);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2412,7 +3061,11 @@ trait MagicCalls
      */
     public function var(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_var($real, $timePeriod, $nbDev);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2426,7 +3079,11 @@ trait MagicCalls
      */
     public function wclprice(array $high, array $low, array $close): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_wclprice($high, $low, $close);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2441,7 +3098,11 @@ trait MagicCalls
      */
     public function willr(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_willr($high, $low, $close, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
 
     /**
@@ -2454,6 +3115,17 @@ trait MagicCalls
      */
     public function wma(array $real, int $timePeriod = 30): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        $result = trader_wma($real, $timePeriod);
+
+        $this->handleErrors();
+
+        return $result;
     }
+
+    /**
+     * Handle errors.
+     *
+     * @throws \BadFunctionCallException
+     */
+    abstract protected function handleErrors();
 }
