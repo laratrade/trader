@@ -1361,7 +1361,7 @@ trait MagicCalls
      */
     public function errno(): int
     {
-        return 0;
+        return $this->__call(__FUNCTION__, func_get_args());
     }
 
     /**
@@ -1401,7 +1401,7 @@ trait MagicCalls
      */
     public static function get_compat(): int
     {
-        return 0;
+        return $this->__call(__FUNCTION__, func_get_args());
     }
 
     /**
@@ -1415,7 +1415,7 @@ trait MagicCalls
      */
     public static function get_unstable_period(int $functionId): int
     {
-        return 0;
+        return $this->__call(__FUNCTION__, func_get_args());
     }
 
     /**
@@ -2072,7 +2072,7 @@ trait MagicCalls
      */
     public static function set_compat(int $compatId)
     {
-        $this->__call(__FUNCTION__, func_get_args());
+        trader_set_compat($compatId);
     }
 
     /**
@@ -2085,7 +2085,7 @@ trait MagicCalls
      */
     public static function set_unstable_period(int $functionId, int $timePeriod)
     {
-        $this->__call(__FUNCTION__, func_get_args());
+        trader_set_unstable_period($functionId, $timePeriod);
     }
 
     /**
