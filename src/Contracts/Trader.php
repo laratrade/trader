@@ -288,7 +288,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl2crows(array $open, array $high, array $low, array $close): array;
+    public function cdl2crows(array $open, array $high, array $low, array $close): array;
 
     /**
      * Three Black Crows.
@@ -300,7 +300,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3blackcrows(array $open, array $high, array $low, array $close): array;
+    public function cdl3blackcrows(array $open, array $high, array $low, array $close): array;
 
     /**
      * Three Inside Up/Down.
@@ -312,7 +312,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3inside(array $open, array $high, array $low, array $close): array;
+    public function cdl3inside(array $open, array $high, array $low, array $close): array;
 
     /**
      * Three-Line Strike
@@ -324,7 +324,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3linestrike(array $open, array $high, array $low, array $close): array;
+    public function cdl3linestrike(array $open, array $high, array $low, array $close): array;
 
     /**
      * Three Outside Up/Down.
@@ -336,7 +336,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3outside(array $open, array $high, array $low, array $close): array;
+    public function cdl3outside(array $open, array $high, array $low, array $close): array;
 
     /**
      * Three Stars In The South.
@@ -348,7 +348,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3starsinsouth(array $open, array $high, array $low, array $close): array;
+    public function cdl3starsinsouth(array $open, array $high, array $low, array $close): array;
 
     /**
      * Three Advancing White Soldiers.
@@ -360,7 +360,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3whitesoldiers(array $open, array $high, array $low, array $close): array;
+    public function cdl3whitesoldiers(array $open, array $high, array $low, array $close): array;
 
     /**
      * Abandoned Baby.
@@ -373,7 +373,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlabandonedbaby(
+    public function cdlabandonedbaby(
         array $open,
         array $high,
         array $low,
@@ -391,7 +391,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdladvanceblock(array $open, array $high, array $low, array $close): array;
+    public function cdladvanceblock(array $open, array $high, array $low, array $close): array;
 
     /**
      * Belt-hold.
@@ -403,7 +403,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlbelthold(array $open, array $high, array $low, array $close): array;
+    public function cdlbelthold(array $open, array $high, array $low, array $close): array;
 
     /**
      * Breakaway.
@@ -415,7 +415,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlbreakaway(array $open, array $high, array $low, array $close): array;
+    public function cdlbreakaway(array $open, array $high, array $low, array $close): array;
 
     /**
      * Closing Marubozu.
@@ -427,7 +427,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlclosingmarubozu(array $open, array $high, array $low, array $close): array;
+    public function cdlclosingmarubozu(array $open, array $high, array $low, array $close): array;
 
     /**
      * Concealing Baby Swallow.
@@ -439,7 +439,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlconcealbabyswall(array $open, array $high, array $low, array $close): array;
+    public function cdlconcealbabyswall(array $open, array $high, array $low, array $close): array;
 
     /**
      * Counterattack.
@@ -451,7 +451,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlcounterattack(array $open, array $high, array $low, array $close): array;
+    public function cdlcounterattack(array $open, array $high, array $low, array $close): array;
 
     /**
      * Dark Cloud Cover.
@@ -464,7 +464,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdldarkcloudcover(
+    public function cdldarkcloudcover(
         array $open,
         array $high,
         array $low,
@@ -482,7 +482,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdldoji(array $open, array $high, array $low, array $close): array;
+    public function cdldoji(array $open, array $high, array $low, array $close): array;
 
     /**
      * Doji Star.
@@ -494,7 +494,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdldojistar(array $open, array $high, array $low, array $close): array;
+    public function cdldojistar(array $open, array $high, array $low, array $close): array;
 
     /**
      * Dragonfly Doji.
@@ -506,7 +506,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdldragonflydoji(array $open, array $high, array $low, array $close): array;
+    public function cdldragonflydoji(array $open, array $high, array $low, array $close): array;
 
     /**
      * Engulfing Pattern.
@@ -518,7 +518,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlengulfing(array $open, array $high, array $low, array $close): array;
+    public function cdlengulfing(array $open, array $high, array $low, array $close): array;
 
     /**
      * Evening Doji Star.
@@ -531,7 +531,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdleveningdojistar(
+    public function cdleveningdojistar(
         array $open,
         array $high,
         array $low,
@@ -550,7 +550,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdleveningstar(
+    public function cdleveningstar(
         array $open,
         array $high,
         array $low,
@@ -568,7 +568,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlgapsidesidewhite(array $open, array $high, array $low, array $close): array;
+    public function cdlgapsidesidewhite(array $open, array $high, array $low, array $close): array;
 
     /**
      * Gravestone Doji.
@@ -580,7 +580,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlgravestonedoji(array $open, array $high, array $low, array $close): array;
+    public function cdlgravestonedoji(array $open, array $high, array $low, array $close): array;
 
     /**
      * Hammer.
@@ -592,7 +592,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhammer(array $open, array $high, array $low, array $close): array;
+    public function cdlhammer(array $open, array $high, array $low, array $close): array;
 
     /**
      * Hanging Man.
@@ -604,7 +604,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhangingman(array $open, array $high, array $low, array $close): array;
+    public function cdlhangingman(array $open, array $high, array $low, array $close): array;
 
     /**
      * Harami Pattern.
@@ -616,7 +616,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlharami(array $open, array $high, array $low, array $close): array;
+    public function cdlharami(array $open, array $high, array $low, array $close): array;
 
     /**
      * Harami Cross Pattern.
@@ -628,7 +628,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlharamicross(array $open, array $high, array $low, array $close): array;
+    public function cdlharamicross(array $open, array $high, array $low, array $close): array;
 
     /**
      * High-Wave Candle.
@@ -640,7 +640,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhighwave(array $open, array $high, array $low, array $close): array;
+    public function cdlhighwave(array $open, array $high, array $low, array $close): array;
 
     /**
      * Hikkake Pattern.
@@ -652,7 +652,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhikkake(array $open, array $high, array $low, array $close): array;
+    public function cdlhikkake(array $open, array $high, array $low, array $close): array;
 
     /**
      * Modified Hikkake Pattern.
@@ -664,7 +664,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhikkakemod(array $open, array $high, array $low, array $close): array;
+    public function cdlhikkakemod(array $open, array $high, array $low, array $close): array;
 
     /**
      * Homing Pigeon.
@@ -676,7 +676,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhomingpigeon(array $open, array $high, array $low, array $close): array;
+    public function cdlhomingpigeon(array $open, array $high, array $low, array $close): array;
 
     /**
      * Identical Three Crows.
@@ -688,7 +688,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlidentical3crows(array $open, array $high, array $low, array $close): array;
+    public function cdlidentical3crows(array $open, array $high, array $low, array $close): array;
 
     /**
      * In-Neck Pattern.
@@ -700,7 +700,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlinneck(array $open, array $high, array $low, array $close): array;
+    public function cdlinneck(array $open, array $high, array $low, array $close): array;
 
     /**
      * Inverted Hammer.
@@ -712,7 +712,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlinvertedhammer(array $open, array $high, array $low, array $close): array;
+    public function cdlinvertedhammer(array $open, array $high, array $low, array $close): array;
 
     /**
      * Kicking.
@@ -724,7 +724,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlkicking(array $open, array $high, array $low, array $close): array;
+    public function cdlkicking(array $open, array $high, array $low, array $close): array;
 
     /**
      * Kicking - bull/bear determined by the longer marubozu.
@@ -736,7 +736,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlkickingbylength(array $open, array $high, array $low, array $close): array;
+    public function cdlkickingbylength(array $open, array $high, array $low, array $close): array;
 
     /**
      * Ladder Bottom.
@@ -748,7 +748,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlladderbottom(array $open, array $high, array $low, array $close): array;
+    public function cdlladderbottom(array $open, array $high, array $low, array $close): array;
 
     /**
      * Long Legged Doji.
@@ -760,7 +760,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdllongleggeddoji(array $open, array $high, array $low, array $close): array;
+    public function cdllongleggeddoji(array $open, array $high, array $low, array $close): array;
 
     /**
      * Long Line Candle.
@@ -772,7 +772,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdllongline(array $open, array $high, array $low, array $close): array;
+    public function cdllongline(array $open, array $high, array $low, array $close): array;
 
     /**
      * Marubozu.
@@ -784,7 +784,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmarubozu(array $open, array $high, array $low, array $close): array;
+    public function cdlmarubozu(array $open, array $high, array $low, array $close): array;
 
     /**
      * Matching Low.
@@ -796,7 +796,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmatchinglow(array $open, array $high, array $low, array $close): array;
+    public function cdlmatchinglow(array $open, array $high, array $low, array $close): array;
 
     /**
      * Mat Hold.
@@ -809,7 +809,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmathold(
+    public function cdlmathold(
         array $open,
         array $high,
         array $low,
@@ -828,7 +828,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmorningdojistar(
+    public function cdlmorningdojistar(
         array $open,
         array $high,
         array $low,
@@ -847,7 +847,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmorningstar(
+    public function cdlmorningstar(
         array $open,
         array $high,
         array $low,
@@ -865,7 +865,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlonneck(array $open, array $high, array $low, array $close): array;
+    public function cdlonneck(array $open, array $high, array $low, array $close): array;
 
     /**
      * Piercing Pattern.
@@ -877,7 +877,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlpiercing(array $open, array $high, array $low, array $close): array;
+    public function cdlpiercing(array $open, array $high, array $low, array $close): array;
 
     /**
      * Rickshaw Man.
@@ -889,7 +889,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlrickshawman(array $open, array $high, array $low, array $close): array;
+    public function cdlrickshawman(array $open, array $high, array $low, array $close): array;
 
     /**
      * Rising/Falling Three Methods.
@@ -901,7 +901,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlrisefall3methods(array $open, array $high, array $low, array $close): array;
+    public function cdlrisefall3methods(array $open, array $high, array $low, array $close): array;
 
     /**
      * Separating Lines.
@@ -913,7 +913,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlseparatinglines(array $open, array $high, array $low, array $close): array;
+    public function cdlseparatinglines(array $open, array $high, array $low, array $close): array;
 
     /**
      * Shooting Star.
@@ -925,7 +925,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlshootingstar(array $open, array $high, array $low, array $close): array;
+    public function cdlshootingstar(array $open, array $high, array $low, array $close): array;
 
     /**
      * Short Line Candle.
@@ -937,7 +937,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlshortline(array $open, array $high, array $low, array $close): array;
+    public function cdlshortline(array $open, array $high, array $low, array $close): array;
 
     /**
      * Spinning Top.
@@ -949,7 +949,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlspinningtop(array $open, array $high, array $low, array $close): array;
+    public function cdlspinningtop(array $open, array $high, array $low, array $close): array;
 
     /**
      * Stalled Pattern.
@@ -961,7 +961,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlstalledpattern(array $open, array $high, array $low, array $close): array;
+    public function cdlstalledpattern(array $open, array $high, array $low, array $close): array;
 
     /**
      * Stick Sandwich.
@@ -973,7 +973,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlsticksandwich(array $open, array $high, array $low, array $close): array;
+    public function cdlsticksandwich(array $open, array $high, array $low, array $close): array;
 
     /**
      * Takuri (Dragonfly Doji with very long lower shadow).
@@ -985,7 +985,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdltakuri(array $open, array $high, array $low, array $close): array;
+    public function cdltakuri(array $open, array $high, array $low, array $close): array;
 
     /**
      * Tasuki Gap.
@@ -997,7 +997,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdltasukigap(array $open, array $high, array $low, array $close): array;
+    public function cdltasukigap(array $open, array $high, array $low, array $close): array;
 
     /**
      * Thrusting Pattern.
@@ -1009,7 +1009,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlthrusting(array $open, array $high, array $low, array $close): array;
+    public function cdlthrusting(array $open, array $high, array $low, array $close): array;
 
     /**
      * Tristar Pattern.
@@ -1021,7 +1021,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdltristar(array $open, array $high, array $low, array $close): array;
+    public function cdltristar(array $open, array $high, array $low, array $close): array;
 
     /**
      * Unique 3 River.
@@ -1033,7 +1033,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlunique3river(array $open, array $high, array $low, array $close): array;
+    public function cdlunique3river(array $open, array $high, array $low, array $close): array;
 
     /**
      * Upside Gap Two Crows.
@@ -1045,7 +1045,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlupsidegap2crows(array $open, array $high, array $low, array $close): array;
+    public function cdlupsidegap2crows(array $open, array $high, array $low, array $close): array;
 
     /**
      * Upside/Downside Gap Three Methods.
@@ -1057,7 +1057,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlxsidegap3methods(array $open, array $high, array $low, array $close): array;
+    public function cdlxsidegap3methods(array $open, array $high, array $low, array $close): array;
 
     /**
      * Vector Ceil.
@@ -1068,7 +1068,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ceil(array $real): array;
+    public function ceil(array $real): array;
 
     /**
      * Chande Momentum Oscillator.
@@ -1078,7 +1078,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cmo(array $real, int $timePeriod = 14): array;
+    public function cmo(array $real, int $timePeriod = 14): array;
 
     /**
      * Pearson's Correlation Coefficient (r).
@@ -1089,7 +1089,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function correl(array $real0, array $real1, int $timePeriod = 30): array;
+    public function correl(array $real0, array $real1, int $timePeriod = 30): array;
 
     /**
      * Vector Trigonometric Cos.
@@ -1100,7 +1100,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cos(array $real): array;
+    public function cos(array $real): array;
 
     /**
      * Vector Trigonometric Cosh.
@@ -1111,7 +1111,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cosh(array $real): array;
+    public function cosh(array $real): array;
 
     /**
      * Double Exponential Moving Average.
@@ -1121,7 +1121,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function dema(array $real, int $timePeriod = 30): array;
+    public function dema(array $real, int $timePeriod = 30): array;
 
     /**
      * Vector Arithmetic Div.
@@ -1133,7 +1133,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function div(array $real0, array $real1): array;
+    public function div(array $real0, array $real1): array;
 
     /**
      * Directional Movement Index.
@@ -1145,7 +1145,7 @@ interface Trader
      *
      * @return array  Returns an array with calculated data.
      */
-    public static function dx(array $high, array $low, array $close, int $timePeriod = 14): array;
+    public function dx(array $high, array $low, array $close, int $timePeriod = 14): array;
 
     /**
      * Exponential Moving Average.
@@ -1155,7 +1155,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ema(array $real, int $timePeriod = 30): array;
+    public function ema(array $real, int $timePeriod = 30): array;
 
     /**
      * Get error code.
@@ -1175,7 +1175,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function exp(array $real): array;
+    public function exp(array $real): array;
 
     /**
      * Vector Floor.
@@ -1186,7 +1186,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function floor(array $real): array;
+    public function floor(array $real): array;
 
     /**
      * Get compatibility mode.
@@ -1195,7 +1195,7 @@ interface Trader
      *
      * @return int Returns the compatibility mode id which can be identified by COMPATIBILITY_* series of constants.
      */
-    public static function get_compat(): int;
+    public function get_compat(): int;
 
     /**
      * Get unstable period.
@@ -1206,7 +1206,7 @@ interface Trader
      *
      * @return int Returns the unstable period factor for the corresponding function.
      */
-    public static function get_unstable_period(int $functionId): int;
+    public function get_unstable_period(int $functionId): int;
 
     /**
      * Hilbert Transform - Dominant Cycle Period.
@@ -1215,7 +1215,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_dcperiod(array $real): array;
+    public function ht_dcperiod(array $real): array;
 
     /**
      * Hilbert Transform - Dominant Cycle Phase.
@@ -1224,7 +1224,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_dcphase(array $real): array;
+    public function ht_dcphase(array $real): array;
 
     /**
      * Hilbert Transform - Phasor Components.
@@ -1234,7 +1234,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_phasor(array $open, array $close): array;
+    public function ht_phasor(array $open, array $close): array;
 
     /**
      * Hilbert Transform - Phasor Components.
@@ -1253,7 +1253,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_trendline(array $real): array;
+    public function ht_trendline(array $real): array;
 
     /**
      * Hilbert Transform - Trend vs Cycle Mode.
@@ -1262,7 +1262,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_trendmode(array $real): array;
+    public function ht_trendmode(array $real): array;
 
     /**
      * Kaufman Adaptive Moving Average.
@@ -1272,7 +1272,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function kama(array $real, int $timePeriod = 30): array;
+    public function kama(array $real, int $timePeriod = 30): array;
 
     /**
      * Linear Regression Angle.
@@ -1282,7 +1282,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function linearreg_angle(array $real, int $timePeriod = 14): array;
+    public function linearreg_angle(array $real, int $timePeriod = 14): array;
 
     /**
      * Linear Regression Angle.
@@ -1292,7 +1292,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function linearreg_intercept(array $real, int $timePeriod = 14): array;
+    public function linearreg_intercept(array $real, int $timePeriod = 14): array;
 
     /**
      * Linear Regression Slope.
@@ -1302,7 +1302,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function linearreg_slope(array $real, int $timePeriod = 14): array;
+    public function linearreg_slope(array $real, int $timePeriod = 14): array;
 
     /**
      * Linear Regression.
@@ -1312,7 +1312,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function linearreg(array $real, int $timePeriod = 14): array;
+    public function linearreg(array $real, int $timePeriod = 14): array;
 
     /**
      * Vector Log Natural.
@@ -1323,7 +1323,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ln(array $real): array;
+    public function ln(array $real): array;
 
     /**
      * Vector Log10.
@@ -1334,7 +1334,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function log10(array $real): array;
+    public function log10(array $real): array;
 
     /**
      * Moving average.
@@ -1345,7 +1345,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ma(array $real, int $timePeriod = 30, int $mAType = 0): array;
+    public function ma(array $real, int $timePeriod = 30, int $mAType = 0): array;
 
     /**
      * Moving Average Convergence/Divergence.
@@ -1357,7 +1357,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function macd(
+    public function macd(
         array $real,
         int $fastPeriod = 12,
         int $slowPeriod = 26,
@@ -1376,7 +1376,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function macdext(
+    public function macdext(
         array $real,
         int $fastPeriod = 12,
         int $fastMAType = 0,
@@ -1393,7 +1393,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function macdfix(array $real, int $signalPeriod = 9): array;
+    public function macdfix(array $real, int $signalPeriod = 9): array;
 
     /**
      * MESA Adaptive Moving Average.
@@ -1404,7 +1404,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mama(array $real, float $fastLimit = 0.5, float $slowLimit = 0.05): array;
+    public function mama(array $real, float $fastLimit = 0.5, float $slowLimit = 0.05): array;
 
     /**
      * Moving average with variable period
@@ -1417,7 +1417,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mavp(
+    public function mavp(
         array $real,
         array $periods,
         int $minPeriod = 2,
@@ -1433,7 +1433,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function max(array $real, int $timePeriod = 30): array;
+    public function max(array $real, int $timePeriod = 30): array;
 
     /**
      * Index of highest value over a specified period
@@ -1443,7 +1443,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function maxindex(array $real, int $timePeriod = 30): array;
+    public function maxindex(array $real, int $timePeriod = 30): array;
 
     /**
      * Median Price.
@@ -1453,7 +1453,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function medprice(array $high, array $low): array;
+    public function medprice(array $high, array $low): array;
 
     /**
      * Money Flow Index.
@@ -1466,7 +1466,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mfi(array $high, array $low, array $close, array $volume, int $timePeriod = 14): array;
+    public function mfi(array $high, array $low, array $close, array $volume, int $timePeriod = 14): array;
 
     /**
      * MidPoint over period.
@@ -1476,7 +1476,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function midpoint(array $real, int $timePeriod = 14): array;
+    public function midpoint(array $real, int $timePeriod = 14): array;
 
     /**
      * Midpoint Price over period.
@@ -1487,7 +1487,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function midprice(array $high, array $low, int $timePeriod = 14);
+    public function midprice(array $high, array $low, int $timePeriod = 14);
 
     /**
      * Lowest value over a specified period.
@@ -1497,7 +1497,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function min(array $real, int $timePeriod = 30): array;
+    public function min(array $real, int $timePeriod = 30): array;
 
     /**
      * Index of lowest value over a specified period.
@@ -1507,7 +1507,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minindex(array $real, int $timePeriod = 30): array;
+    public function minindex(array $real, int $timePeriod = 30): array;
 
     /**
      * Lowest and highest values over a specified period.
@@ -1517,7 +1517,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minmax(array $real, int $timePeriod = 30): array;
+    public function minmax(array $real, int $timePeriod = 30): array;
 
     /**
      * Indexes of lowest and highest values over a specified period.
@@ -1527,7 +1527,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minmaxindex(array $real, int $timePeriod = 30): array;
+    public function minmaxindex(array $real, int $timePeriod = 30): array;
 
     /**
      * Minus Directional Indicator.
@@ -1539,7 +1539,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minus_di(array $high, array $low, array $close, int $timePeriod = 14): array;
+    public function minus_di(array $high, array $low, array $close, int $timePeriod = 14): array;
 
     /**
      * Minus Directional Movement.
@@ -1550,7 +1550,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minus_dm(array $high, array $low, int $timePeriod = 14): array;
+    public function minus_dm(array $high, array $low, int $timePeriod = 14): array;
 
     /**
      * Momentum.
@@ -1560,7 +1560,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mom(array $real, int $timePeriod = 10): array;
+    public function mom(array $real, int $timePeriod = 10): array;
 
     /**
      * Vector Arithmetic Mult.
@@ -1572,7 +1572,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mult(array $real0, array $real1): array;
+    public function mult(array $real0, array $real1): array;
 
     /**
      * Normalized Average True Range.
@@ -1584,7 +1584,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function natr(array $high, array $low, array $close, int $timePeriod = 14): array;
+    public function natr(array $high, array $low, array $close, int $timePeriod = 14): array;
 
     /**
      * On Balance Volume.
@@ -1594,7 +1594,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function obv(array $real, array $volume): array;
+    public function obv(array $real, array $volume): array;
 
     /**
      * Plus Directional Indicator.
@@ -1606,7 +1606,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function plus_di(array $high, array $low, array $close, int $timePeriod = 14): array;
+    public function plus_di(array $high, array $low, array $close, int $timePeriod = 14): array;
 
     /**
      * Plus Directional Movement.
@@ -1617,7 +1617,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function plus_dm(array $high, array $low, int $timePeriod = 14): array;
+    public function plus_dm(array $high, array $low, int $timePeriod = 14): array;
 
     /**
      * Percentage Price Oscillator.
@@ -1629,7 +1629,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array;
+    public function ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array;
 
     /**
      * Rate of change : ((price/prevPrice)-1)*100.
@@ -1639,7 +1639,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function roc(array $real, int $timePeriod = 10): array;
+    public function roc(array $real, int $timePeriod = 10): array;
 
     /**
      * Rate of change Percentage: (price-prevPrice)/prevPrice.
@@ -1649,7 +1649,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function rocp(array $real, int $timePeriod = 10): array;
+    public function rocp(array $real, int $timePeriod = 10): array;
 
     /**
      * Rate of change ratio 100 scale: (price/prevPrice)*100.
@@ -1659,7 +1659,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function rocr100(array $real, int $timePeriod = 10): array;
+    public function rocr100(array $real, int $timePeriod = 10): array;
 
     /**
      * Rate of change ratio: (price/prevPrice).
@@ -1669,7 +1669,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function rocr(array $real, int $timePeriod = 10): array;
+    public function rocr(array $real, int $timePeriod = 10): array;
 
     /**
      * Relative Strength Index.
@@ -1679,7 +1679,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function rsi(array $real, int $timePeriod = 14): array;
+    public function rsi(array $real, int $timePeriod = 14): array;
 
     /**
      * Parabolic SAR.
@@ -1691,7 +1691,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sar(array $high, array $low, float $acceleration = 0.02, float $maximum = 0.2): array;
+    public function sar(array $high, array $low, float $acceleration = 0.02, float $maximum = 0.2): array;
 
     /**
      * Parabolic SAR - Extended.
@@ -1709,7 +1709,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sarext(
+    public function sarext(
         array $high,
         array $low,
         float $startValue = 0.0,
@@ -1729,7 +1729,7 @@ interface Trader
      *
      * @param int $compatId Compatibility Id. TRADER_COMPATIBILITY_* series of constants should be used.
      */
-    public static function set_compat(int $compatId);
+    public function set_compat(int $compatId);
 
     /**
      * Set unstable period.
@@ -1739,7 +1739,7 @@ interface Trader
      * @param int $functionId Function ID the factor should be set for. FUNC_UNST_* constant series can be used to affect the corresponding function.
      * @param int $timePeriod Unstable period value.
      */
-    public static function set_unstable_period(int $functionId, int $timePeriod);
+    public function set_unstable_period(int $functionId, int $timePeriod);
 
     /**
      * Vector Trigonometric Sin.
@@ -1750,7 +1750,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sin(array $real): array;
+    public function sin(array $real): array;
 
     /**
      * Vector Trigonometric Sinh.
@@ -1761,7 +1761,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sinh(array $real): array;
+    public function sinh(array $real): array;
 
     /**
      * Simple Moving Average.
@@ -1771,7 +1771,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sma(array $real, int $timePeriod = 30): array;
+    public function sma(array $real, int $timePeriod = 30): array;
 
     /**
      * Vector Square Root.
@@ -1782,7 +1782,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sqrt(array $real): array;
+    public function sqrt(array $real): array;
 
     /**
      * Standard Deviation.
@@ -1793,7 +1793,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function stddev(array $real, int $timePeriod = 5, float $nbDev = 1.0): array;
+    public function stddev(array $real, int $timePeriod = 5, float $nbDev = 1.0): array;
 
     /**
      * Stochastic.
@@ -1809,7 +1809,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function stoch(
+    public function stoch(
         array $high,
         array $low,
         array $close,
@@ -1832,7 +1832,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function stochf(
+    public function stochf(
         array $high,
         array $low,
         array $close,
@@ -1852,7 +1852,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function stochrsi(
+    public function stochrsi(
         array $real,
         int $timePeriod = 14,
         int $fastK_Period = 5,
@@ -1870,7 +1870,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sub(array $real0, array $real1): array;
+    public function sub(array $real0, array $real1): array;
 
     /**
      * Summation.
@@ -1880,7 +1880,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sum(array $real, int $timePeriod = 30): array;
+    public function sum(array $real, int $timePeriod = 30): array;
 
     /**
      * Triple Exponential Moving Average (T3).
@@ -1891,7 +1891,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function t3(array $real, int $timePeriod = 5, float $vFactor = 0.7): array;
+    public function t3(array $real, int $timePeriod = 5, float $vFactor = 0.7): array;
 
     /**
      * Vector Trigonometric Tan.
@@ -1902,7 +1902,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function tan(array $real): array;
+    public function tan(array $real): array;
 
     /**
      * Vector Trigonometric Tanh.
@@ -1913,7 +1913,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function tanh(array $real): array;
+    public function tanh(array $real): array;
 
     /**
      * Triple Exponential Moving Average.
@@ -1923,7 +1923,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function tema(array $real, int $timePeriod = 30): array;
+    public function tema(array $real, int $timePeriod = 30): array;
 
     /**
      * True Range.
@@ -1934,7 +1934,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function trange(array $high, array $low, array $close): array;
+    public function trange(array $high, array $low, array $close): array;
 
     /**
      * Triangular Moving Average.
@@ -1944,7 +1944,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function trima(array $real, int $timePeriod = 30): array;
+    public function trima(array $real, int $timePeriod = 30): array;
 
     /**
      * 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA.
@@ -1954,7 +1954,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function trix(array $real, int $timePeriod = 30): array;
+    public function trix(array $real, int $timePeriod = 30): array;
 
     /**
      * Time Series Forecast.
@@ -1964,7 +1964,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function tsf(array $real, int $timePeriod = 14): array;
+    public function tsf(array $real, int $timePeriod = 14): array;
 
     /**
      * Typical Price.
@@ -1975,7 +1975,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function typprice(array $high, array $low, array $close): array;
+    public function typprice(array $high, array $low, array $close): array;
 
     /**
      * Ultimate Oscillator.
@@ -1989,7 +1989,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ultosc(
+    public function ultosc(
         array $high,
         array $low,
         array $close,
@@ -2007,7 +2007,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function var(array $real, int $timePeriod = 5, float $nbDev = 1.0): array;
+    public function var(array $real, int $timePeriod = 5, float $nbDev = 1.0): array;
 
     /**
      * Weighted Close Price.
@@ -2018,7 +2018,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function wclprice(array $high, array $low, array $close): array;
+    public function wclprice(array $high, array $low, array $close): array;
 
     /**
      * Williams' %R.
@@ -2030,7 +2030,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function willr(array $high, array $low, array $close, int $timePeriod = 14): array;
+    public function willr(array $high, array $low, array $close, int $timePeriod = 14): array;
 
     /**
      * Weighted Moving Average.
@@ -2040,5 +2040,5 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public static function wma(array $real, int $timePeriod = 30): array;
+    public function wma(array $real, int $timePeriod = 30): array;
 }
