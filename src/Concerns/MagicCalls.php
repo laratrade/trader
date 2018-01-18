@@ -280,7 +280,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl2crows(array $open, array $high, array $low, array $close): array
+    public function cdl2crows(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -295,7 +295,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3blackcrows(array $open, array $high, array $low, array $close): array
+    public function cdl3blackcrows(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -310,7 +310,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3inside(array $open, array $high, array $low, array $close): array
+    public function cdl3inside(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -325,7 +325,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3linestrike(array $open, array $high, array $low, array $close): array
+    public function cdl3linestrike(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -340,7 +340,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3outside(array $open, array $high, array $low, array $close): array
+    public function cdl3outside(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -355,7 +355,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3starsinsouth(array $open, array $high, array $low, array $close): array
+    public function cdl3starsinsouth(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -370,7 +370,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdl3whitesoldiers(array $open, array $high, array $low, array $close): array
+    public function cdl3whitesoldiers(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -386,7 +386,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlabandonedbaby(
+    public function cdlabandonedbaby(
         array $open,
         array $high,
         array $low,
@@ -406,7 +406,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdladvanceblock(array $open, array $high, array $low, array $close): array
+    public function cdladvanceblock(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -421,7 +421,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlbelthold(array $open, array $high, array $low, array $close): array
+    public function cdlbelthold(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -436,7 +436,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlbreakaway(array $open, array $high, array $low, array $close): array
+    public function cdlbreakaway(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -451,7 +451,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlclosingmarubozu(array $open, array $high, array $low, array $close): array
+    public function cdlclosingmarubozu(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -466,7 +466,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlconcealbabyswall(array $open, array $high, array $low, array $close): array
+    public function cdlconcealbabyswall(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -481,7 +481,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlcounterattack(array $open, array $high, array $low, array $close): array
+    public function cdlcounterattack(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -497,7 +497,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdldarkcloudcover(
+    public function cdldarkcloudcover(
         array $open,
         array $high,
         array $low,
@@ -517,7 +517,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdldoji(array $open, array $high, array $low, array $close): array
+    public function cdldoji(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -532,7 +532,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdldojistar(array $open, array $high, array $low, array $close): array
+    public function cdldojistar(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -547,7 +547,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdldragonflydoji(array $open, array $high, array $low, array $close): array
+    public function cdldragonflydoji(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -562,7 +562,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlengulfing(array $open, array $high, array $low, array $close): array
+    public function cdlengulfing(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -578,7 +578,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdleveningdojistar(
+    public function cdleveningdojistar(
         array $open,
         array $high,
         array $low,
@@ -599,7 +599,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdleveningstar(
+    public function cdleveningstar(
         array $open,
         array $high,
         array $low,
@@ -619,7 +619,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlgapsidesidewhite(array $open, array $high, array $low, array $close): array
+    public function cdlgapsidesidewhite(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -634,7 +634,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlgravestonedoji(array $open, array $high, array $low, array $close): array
+    public function cdlgravestonedoji(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -649,7 +649,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhammer(array $open, array $high, array $low, array $close): array
+    public function cdlhammer(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -664,7 +664,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhangingman(array $open, array $high, array $low, array $close): array
+    public function cdlhangingman(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -679,7 +679,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlharami(array $open, array $high, array $low, array $close): array
+    public function cdlharami(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -694,7 +694,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlharamicross(array $open, array $high, array $low, array $close): array
+    public function cdlharamicross(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -709,7 +709,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhighwave(array $open, array $high, array $low, array $close): array
+    public function cdlhighwave(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -724,7 +724,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhikkake(array $open, array $high, array $low, array $close): array
+    public function cdlhikkake(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -739,7 +739,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhikkakemod(array $open, array $high, array $low, array $close): array
+    public function cdlhikkakemod(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -754,7 +754,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlhomingpigeon(array $open, array $high, array $low, array $close): array
+    public function cdlhomingpigeon(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -769,7 +769,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlidentical3crows(array $open, array $high, array $low, array $close): array
+    public function cdlidentical3crows(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -784,7 +784,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlinneck(array $open, array $high, array $low, array $close): array
+    public function cdlinneck(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -799,7 +799,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlinvertedhammer(array $open, array $high, array $low, array $close): array
+    public function cdlinvertedhammer(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -814,7 +814,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlkicking(array $open, array $high, array $low, array $close): array
+    public function cdlkicking(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -829,7 +829,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlkickingbylength(array $open, array $high, array $low, array $close): array
+    public function cdlkickingbylength(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -844,7 +844,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlladderbottom(array $open, array $high, array $low, array $close): array
+    public function cdlladderbottom(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -859,7 +859,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdllongleggeddoji(array $open, array $high, array $low, array $close): array
+    public function cdllongleggeddoji(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -874,7 +874,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdllongline(array $open, array $high, array $low, array $close): array
+    public function cdllongline(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -889,7 +889,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmarubozu(array $open, array $high, array $low, array $close): array
+    public function cdlmarubozu(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -904,7 +904,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmatchinglow(array $open, array $high, array $low, array $close): array
+    public function cdlmatchinglow(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -920,7 +920,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmathold(
+    public function cdlmathold(
         array $open,
         array $high,
         array $low,
@@ -941,7 +941,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmorningdojistar(
+    public function cdlmorningdojistar(
         array $open,
         array $high,
         array $low,
@@ -962,7 +962,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlmorningstar(
+    public function cdlmorningstar(
         array $open,
         array $high,
         array $low,
@@ -982,7 +982,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlonneck(array $open, array $high, array $low, array $close): array
+    public function cdlonneck(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -997,7 +997,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlpiercing(array $open, array $high, array $low, array $close): array
+    public function cdlpiercing(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1012,7 +1012,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlrickshawman(array $open, array $high, array $low, array $close): array
+    public function cdlrickshawman(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1027,7 +1027,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlrisefall3methods(array $open, array $high, array $low, array $close): array
+    public function cdlrisefall3methods(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1042,7 +1042,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlseparatinglines(array $open, array $high, array $low, array $close): array
+    public function cdlseparatinglines(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1057,7 +1057,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlshootingstar(array $open, array $high, array $low, array $close): array
+    public function cdlshootingstar(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1072,7 +1072,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlshortline(array $open, array $high, array $low, array $close): array
+    public function cdlshortline(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1087,7 +1087,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlspinningtop(array $open, array $high, array $low, array $close): array
+    public function cdlspinningtop(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1102,7 +1102,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlstalledpattern(array $open, array $high, array $low, array $close): array
+    public function cdlstalledpattern(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1117,7 +1117,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlsticksandwich(array $open, array $high, array $low, array $close): array
+    public function cdlsticksandwich(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1132,7 +1132,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdltakuri(array $open, array $high, array $low, array $close): array
+    public function cdltakuri(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1147,7 +1147,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdltasukigap(array $open, array $high, array $low, array $close): array
+    public function cdltasukigap(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1162,7 +1162,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlthrusting(array $open, array $high, array $low, array $close): array
+    public function cdlthrusting(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1177,7 +1177,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdltristar(array $open, array $high, array $low, array $close): array
+    public function cdltristar(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1192,7 +1192,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlunique3river(array $open, array $high, array $low, array $close): array
+    public function cdlunique3river(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1207,7 +1207,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlupsidegap2crows(array $open, array $high, array $low, array $close): array
+    public function cdlupsidegap2crows(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1222,7 +1222,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cdlxsidegap3methods(array $open, array $high, array $low, array $close): array
+    public function cdlxsidegap3methods(array $open, array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1236,7 +1236,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ceil(array $real): array
+    public function ceil(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1249,7 +1249,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cmo(array $real, int $timePeriod = 14): array
+    public function cmo(array $real, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1263,7 +1263,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function correl(array $real0, array $real1, int $timePeriod = 30): array
+    public function correl(array $real0, array $real1, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1277,7 +1277,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cos(array $real): array
+    public function cos(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1291,7 +1291,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function cosh(array $real): array
+    public function cosh(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1304,7 +1304,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function dema(array $real, int $timePeriod = 30): array
+    public function dema(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1319,7 +1319,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function div(array $real0, array $real1): array
+    public function div(array $real0, array $real1): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1334,7 +1334,7 @@ trait MagicCalls
      *
      * @return array  Returns an array with calculated data.
      */
-    public static function dx(array $high, array $low, array $close, int $timePeriod = 14): array
+    public function dx(array $high, array $low, array $close, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1347,7 +1347,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ema(array $real, int $timePeriod = 30): array
+    public function ema(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1373,7 +1373,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function exp(array $real): array
+    public function exp(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1387,7 +1387,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function floor(array $real): array
+    public function floor(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1399,7 +1399,7 @@ trait MagicCalls
      *
      * @return int Returns the compatibility mode id which can be identified by COMPATIBILITY_* series of constants.
      */
-    public static function get_compat(): int
+    public function get_compat(): int
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1413,7 +1413,7 @@ trait MagicCalls
      *
      * @return int Returns the unstable period factor for the corresponding function.
      */
-    public static function get_unstable_period(int $functionId): int
+    public function get_unstable_period(int $functionId): int
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1425,7 +1425,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_dcperiod(array $real): array
+    public function ht_dcperiod(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1437,7 +1437,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_dcphase(array $real): array
+    public function ht_dcphase(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1450,7 +1450,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_phasor(array $open, array $close): array
+    public function ht_phasor(array $open, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1475,7 +1475,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_trendline(array $real): array
+    public function ht_trendline(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1487,7 +1487,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ht_trendmode(array $real): array
+    public function ht_trendmode(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1500,7 +1500,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function kama(array $real, int $timePeriod = 30): array
+    public function kama(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1513,7 +1513,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function linearreg_angle(array $real, int $timePeriod = 14): array
+    public function linearreg_angle(array $real, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1526,7 +1526,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function linearreg_intercept(array $real, int $timePeriod = 14): array
+    public function linearreg_intercept(array $real, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1539,7 +1539,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function linearreg_slope(array $real, int $timePeriod = 14): array
+    public function linearreg_slope(array $real, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1552,7 +1552,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function linearreg(array $real, int $timePeriod = 14): array
+    public function linearreg(array $real, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1566,7 +1566,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ln(array $real): array
+    public function ln(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1580,7 +1580,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function log10(array $real): array
+    public function log10(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1594,7 +1594,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ma(array $real, int $timePeriod = 30, int $mAType = 0): array
+    public function ma(array $real, int $timePeriod = 30, int $mAType = 0): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1609,7 +1609,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function macd(
+    public function macd(
         array $real,
         int $fastPeriod = 12,
         int $slowPeriod = 26,
@@ -1630,7 +1630,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function macdext(
+    public function macdext(
         array $real,
         int $fastPeriod = 12,
         int $fastMAType = 0,
@@ -1649,7 +1649,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function macdfix(array $real, int $signalPeriod = 9): array
+    public function macdfix(array $real, int $signalPeriod = 9): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1663,7 +1663,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mama(array $real, float $fastLimit = 0.5, float $slowLimit = 0.05): array
+    public function mama(array $real, float $fastLimit = 0.5, float $slowLimit = 0.05): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1679,7 +1679,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mavp(
+    public function mavp(
         array $real,
         array $periods,
         int $minPeriod = 2,
@@ -1697,7 +1697,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function max(array $real, int $timePeriod = 30): array
+    public function max(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1710,7 +1710,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function maxindex(array $real, int $timePeriod = 30): array
+    public function maxindex(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1723,7 +1723,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function medprice(array $high, array $low): array
+    public function medprice(array $high, array $low): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1739,7 +1739,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mfi(array $high, array $low, array $close, array $volume, int $timePeriod = 14): array
+    public function mfi(array $high, array $low, array $close, array $volume, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1752,7 +1752,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function midpoint(array $real, int $timePeriod = 14): array
+    public function midpoint(array $real, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1766,7 +1766,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function midprice(array $high, array $low, int $timePeriod = 14)
+    public function midprice(array $high, array $low, int $timePeriod = 14)
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1779,7 +1779,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function min(array $real, int $timePeriod = 30): array
+    public function min(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1792,7 +1792,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minindex(array $real, int $timePeriod = 30): array
+    public function minindex(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1805,7 +1805,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minmax(array $real, int $timePeriod = 30): array
+    public function minmax(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1818,7 +1818,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minmaxindex(array $real, int $timePeriod = 30): array
+    public function minmaxindex(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1833,7 +1833,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minus_di(array $high, array $low, array $close, int $timePeriod = 14): array
+    public function minus_di(array $high, array $low, array $close, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1847,7 +1847,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function minus_dm(array $high, array $low, int $timePeriod = 14): array
+    public function minus_dm(array $high, array $low, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1860,7 +1860,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mom(array $real, int $timePeriod = 10): array
+    public function mom(array $real, int $timePeriod = 10): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1875,7 +1875,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function mult(array $real0, array $real1): array
+    public function mult(array $real0, array $real1): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1890,7 +1890,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function natr(array $high, array $low, array $close, int $timePeriod = 14): array
+    public function natr(array $high, array $low, array $close, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1903,7 +1903,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function obv(array $real, array $volume): array
+    public function obv(array $real, array $volume): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1918,7 +1918,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function plus_di(array $high, array $low, array $close, int $timePeriod = 14): array
+    public function plus_di(array $high, array $low, array $close, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1932,7 +1932,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function plus_dm(array $high, array $low, int $timePeriod = 14): array
+    public function plus_dm(array $high, array $low, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1947,7 +1947,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array
+    public function ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1960,7 +1960,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function roc(array $real, int $timePeriod = 10): array
+    public function roc(array $real, int $timePeriod = 10): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1973,7 +1973,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function rocp(array $real, int $timePeriod = 10): array
+    public function rocp(array $real, int $timePeriod = 10): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1986,7 +1986,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function rocr100(array $real, int $timePeriod = 10): array
+    public function rocr100(array $real, int $timePeriod = 10): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -1999,7 +1999,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function rocr(array $real, int $timePeriod = 10): array
+    public function rocr(array $real, int $timePeriod = 10): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2012,7 +2012,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function rsi(array $real, int $timePeriod = 14): array
+    public function rsi(array $real, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2027,7 +2027,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sar(array $high, array $low, float $acceleration = 0.02, float $maximum = 0.2): array
+    public function sar(array $high, array $low, float $acceleration = 0.02, float $maximum = 0.2): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2048,7 +2048,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sarext(
+    public function sarext(
         array $high,
         array $low,
         float $startValue = 0.0,
@@ -2070,7 +2070,7 @@ trait MagicCalls
      *
      * @param int $compatId Compatibility Id. TRADER_COMPATIBILITY_* series of constants should be used.
      */
-    public static function set_compat(int $compatId)
+    public function set_compat(int $compatId)
     {
         trader_set_compat($compatId);
     }
@@ -2083,7 +2083,7 @@ trait MagicCalls
      * @param int $functionId Function ID the factor should be set for. FUNC_UNST_* constant series can be used to affect the corresponding function.
      * @param int $timePeriod Unstable period value.
      */
-    public static function set_unstable_period(int $functionId, int $timePeriod)
+    public function set_unstable_period(int $functionId, int $timePeriod)
     {
         trader_set_unstable_period($functionId, $timePeriod);
     }
@@ -2097,7 +2097,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sin(array $real): array
+    public function sin(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2111,7 +2111,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sinh(array $real): array
+    public function sinh(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2124,7 +2124,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sma(array $real, int $timePeriod = 30): array
+    public function sma(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2138,7 +2138,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sqrt(array $real): array
+    public function sqrt(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2152,7 +2152,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function stddev(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
+    public function stddev(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2171,7 +2171,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function stoch(
+    public function stoch(
         array $high,
         array $low,
         array $close,
@@ -2196,7 +2196,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function stochf(
+    public function stochf(
         array $high,
         array $low,
         array $close,
@@ -2218,7 +2218,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function stochrsi(
+    public function stochrsi(
         array $real,
         int $timePeriod = 14,
         int $fastK_Period = 5,
@@ -2238,7 +2238,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sub(array $real0, array $real1): array
+    public function sub(array $real0, array $real1): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2251,7 +2251,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function sum(array $real, int $timePeriod = 30): array
+    public function sum(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2265,7 +2265,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function t3(array $real, int $timePeriod = 5, float $vFactor = 0.7): array
+    public function t3(array $real, int $timePeriod = 5, float $vFactor = 0.7): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2279,7 +2279,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function tan(array $real): array
+    public function tan(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2293,7 +2293,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function tanh(array $real): array
+    public function tanh(array $real): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2306,7 +2306,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function tema(array $real, int $timePeriod = 30): array
+    public function tema(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2320,7 +2320,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function trange(array $high, array $low, array $close): array
+    public function trange(array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2333,7 +2333,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function trima(array $real, int $timePeriod = 30): array
+    public function trima(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2346,7 +2346,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function trix(array $real, int $timePeriod = 30): array
+    public function trix(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2359,7 +2359,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function tsf(array $real, int $timePeriod = 14): array
+    public function tsf(array $real, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2373,7 +2373,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function typprice(array $high, array $low, array $close): array
+    public function typprice(array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2390,7 +2390,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function ultosc(
+    public function ultosc(
         array $high,
         array $low,
         array $close,
@@ -2410,7 +2410,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function var(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
+    public function var(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2424,7 +2424,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function wclprice(array $high, array $low, array $close): array
+    public function wclprice(array $high, array $low, array $close): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2439,7 +2439,7 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function willr(array $high, array $low, array $close, int $timePeriod = 14): array
+    public function willr(array $high, array $low, array $close, int $timePeriod = 14): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
@@ -2452,8 +2452,16 @@ trait MagicCalls
      *
      * @return array Returns an array with calculated data.
      */
-    public static function wma(array $real, int $timePeriod = 30): array
+    public function wma(array $real, int $timePeriod = 30): array
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
+
+    /**
+     * @param $name
+     * @param $arguments
+     *
+     * @return mixed
+     */
+    abstract public function __call($name, $arguments);
 }
