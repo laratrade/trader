@@ -22,7 +22,7 @@ trait MagicCalls
      */
     public function acos(array $real): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_acos($real);
     }
 
     /**
@@ -37,7 +37,7 @@ trait MagicCalls
      */
     public function ad(array $high, array $low, array $close, array $volume): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_ad($high, $low, $close, $volume);
     }
 
     /**
@@ -52,7 +52,7 @@ trait MagicCalls
      */
     public function add(array $real0, array $real1): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_add($real0, $real1);
     }
 
     /**
@@ -75,7 +75,7 @@ trait MagicCalls
         int $fastPeriod = 3,
         int $slowPeriod = 10
     ): array {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_adosc($high, $low, $close, $volume, $fastPeriod, $slowPeriod);
     }
 
     /**
@@ -90,7 +90,7 @@ trait MagicCalls
      */
     public function adx(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_adx($high, $low, $close, $timePeriod);
     }
 
     /**
@@ -105,7 +105,7 @@ trait MagicCalls
      */
     public function adxr(array $high, array $low, array $close, int $timePeriod = 14): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_adxr($high, $low, $close, $timePeriod);
     }
 
     /**
@@ -120,7 +120,7 @@ trait MagicCalls
      */
     public function apo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array
     {
-        return $this->__call(__FUNCTION__, func_get_args());
+        return trader_adxr($real, $fastPeriod, $slowPeriod, $mAType);
     }
 
     /**
@@ -2456,12 +2456,4 @@ trait MagicCalls
     {
         return $this->__call(__FUNCTION__, func_get_args());
     }
-
-    /**
-     * @param $name
-     * @param $arguments
-     *
-     * @return mixed
-     */
-    abstract public function __call($name, $arguments);
 }
