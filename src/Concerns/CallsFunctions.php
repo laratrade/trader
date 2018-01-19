@@ -1,6 +1,6 @@
 <?php
 
-namespace Laratrade\Trader\Contracts;
+namespace Laratrade\Trader\Concerns;
 
 /**
  * Trait MagicCalls

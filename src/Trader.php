@@ -3,7 +3,7 @@
 namespace Laratrade\Trader;
 
 use Laratrade\Trader\Concerns\HandlesErrors;
-use Laratrade\Trader\Contracts\CallsFunctions;
+use Laratrade\Trader\Concerns\CallsFunctions;
 use Laratrade\Trader\Contracts\Trader as TraderContract;
 
 /**
