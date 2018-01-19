@@ -955,165 +955,330 @@ $result = Trader::cdldojistar(array $open, array $high, array $low, array $close
 
 Dragonfly Doji
 
+``` php
+$result = Trader::cdldragonflydoji(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlengulfing`
 
 Engulfing Pattern
+
+``` php
+$result = Trader::cdlengulfing(array $open, array $high, array $low, array $close);
+```
 
 ### `cdleveningdojistar`
 
 Evening Doji Star
 
+``` php
+$result = Trader::cdleveningdojistar(array $open, array $high, array $low, array $close, float $penetration = 0.3);
+```
+
 ### `cdleveningstar`
 
 Evening Star
+
+``` php
+$result = Trader::cdleveningstar(array $open, array $high, array $low, array $close, float $penetration = 0.3);
+```
 
 ### `cdlgapsidesidewhite`
 
 Up/Down-gap side-by-side white lines
 
+``` php
+$result = Trader::cdlgapsidesidewhite(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlgravestonedoji`
 
 Gravestone Doji
+
+``` php
+$result = Trader::cdlgravestonedoji(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlhammer`
 
 Hammer
 
+``` php
+$result = Trader::cdlhammer(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlhangingman`
 
 Hanging Man
+
+``` php
+$result = Trader::cdlhangingman(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlharami`
 
 Harami Pattern
 
+``` php
+$result = Trader::cdlharami(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlharamicross`
 
 Harami Cross Pattern
+
+``` php
+$result = Trader::cdlharamicross(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlhighwave`
 
 High-Wave Candle
 
+``` php
+$result = Trader::cdlhighwave(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlhikkake`
 
 Hikkake Pattern
+
+``` php
+$result = Trader::cdlhikkake(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlhikkakemod`
 
 Modified Hikkake Pattern
 
+``` php
+$result = Trader::cdlhikkakemod(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlhomingpigeon`
 
 Homing Pigeon
+
+``` php
+$result = Trader::cdlhomingpigeon(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlidentical3crows`
 
 Identical Three Crows
 
+``` php
+$result = Trader::cdlidentical3crows(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlinneck`
 
 In-Neck Pattern
+
+``` php
+$result = Trader::cdlinneck(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlinvertedhammer`
 
 Inverted Hammer
 
+``` php
+$result = Trader::cdlinvertedhammer(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlkicking`
 
 Kicking
+
+``` php
+$result = Trader::cdlkicking(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlkickingbylength`
 
 Kicking - bull/bear determined by the longer marubozu
 
+``` php
+$result = Trader::cdlkickingbylength(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlladderbottom`
 
 Ladder Bottom
+
+``` php
+$result = Trader::cdlladderbottom(array $open, array $high, array $low, array $close);
+```
 
 ### `cdllongleggeddoji`
 
 Long Legged Doji
 
+``` php
+$result = Trader::cdllongleggeddoji(array $open, array $high, array $low, array $close);
+```
+
 ### `cdllongline`
 
 Long Line Candle
+
+``` php
+$result = Trader::cdllongline(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlmarubozu`
 
 Marubozu
 
+``` php
+$result = Trader::cdlmarubozu(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlmatchinglow`
 
 Matching Low
+
+``` php
+$result = Trader::cdlmatchinglow(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlmathold`
 
 Mat Hold
 
+``` php
+$result = Trader::cdlmathold(array $open, array $high, array $low, array $close, float $penetration = 0.5);
+```
+
 ### `cdlmorningdojistar`
 
 Morning Doji Star
+
+``` php
+$result = Trader::cdlmorningdojistar(array $open, array $high, array $low, array $close, float $penetration = 0.3);
+```
 
 ### `cdlmorningstar`
 
 Morning Star
 
+``` php
+$result = Trader::cdlmorningstar(array $open, array $high, array $low, array $close, float $penetration = 0.3);
+```
+
 ### `cdlonneck`
 
 On-Neck Pattern
+
+``` php
+$result = Trader::cdlonneck(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlpiercing`
 
 Piercing Pattern
 
+``` php
+$result = Trader::cdlpiercing(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlrickshawman`
 
 Rickshaw Man
+
+``` php
+$result = Trader::cdlrickshawman(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlrisefall3methods`
 
 Rising/Falling Three Methods
 
+``` php
+$result = Trader::cdlrisefall3methods(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlseparatinglines`
 
 Separating Lines
+
+``` php
+$result = Trader::cdlseparatinglines(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlshootingstar`
 
 Shooting Star
 
+``` php
+$result = Trader::cdlshootingstar(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlshortline`
 
 Short Line Candle
+
+``` php
+$result = Trader::cdlshortline(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlspinningtop`
 
 Spinning Top
 
+``` php
+$result = Trader::cdlspinningtop(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlstalledpattern`
 
 Stalled Pattern
+
+``` php
+$result = Trader::cdlstalledpattern(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlsticksandwich`
 
 Stick Sandwich
 
+``` php
+$result = Trader::cdlsticksandwich(array $open, array $high, array $low, array $close);
+```
+
 ### `cdltakuri`
 
 Takuri (Dragonfly Doji with very long lower shadow)
+
+``` php
+$result = Trader::cdltakuri(array $open, array $high, array $low, array $close);
+```
 
 ### `cdltasukigap`
 
 Tasuki Gap
 
+``` php
+$result = Trader::cdltasukigap(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlthrusting`
 
 Thrusting Pattern
 
+``` php
+$result = Trader::cdlthrusting(array $open, array $high, array $low, array $close);
+```
+
+
 ### `cdltristar`
 
 Tristar Pattern
+
+``` php
+$result = Trader::cdltristar(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlunique3river`
 
