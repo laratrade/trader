@@ -144,7 +144,7 @@ trait CallsFunctions
      */
     public function apo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array
     {
-        $result = trader_adxr($real, $fastPeriod, $slowPeriod, $mAType);
+        $result = trader_apo($real, $fastPeriod, $slowPeriod, $mAType);
 
         $this->handleErrors();
 
@@ -350,7 +350,7 @@ trait CallsFunctions
      */
     public function cdl2crows(array $open, array $high, array $low, array $close): array
     {
-        $result = trader_cci($open, $high, $low, $close);
+        $result = trader_cdl2crows($open, $high, $low, $close);
 
         $this->handleErrors();
 
@@ -1657,7 +1657,7 @@ trait CallsFunctions
      */
     public function div(array $real0, array $real1): array
     {
-        $result = trader_dema($real0, $real1);
+        $result = trader_div($real0, $real1);
 
         $this->handleErrors();
 
@@ -2220,7 +2220,7 @@ trait CallsFunctions
      */
     public function midprice(array $high, array $low, int $timePeriod = 14)
     {
-        $result = trader_midpoint($high, $low, $timePeriod);
+        $result = trader_midprice($high, $low, $timePeriod);
 
         $this->handleErrors();
 
@@ -2434,7 +2434,7 @@ trait CallsFunctions
      */
     public function plus_dm(array $high, array $low, int $timePeriod = 14): array
     {
-        $result = trader_plus_di($high, $low, $timePeriod);
+        $result = trader_plus_dm($high, $low, $timePeriod);
 
         $this->handleErrors();
 
@@ -2453,7 +2453,7 @@ trait CallsFunctions
      */
     public function ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0): array
     {
-        $result = trader_plus_di($real, $fastPeriod, $slowPeriod, $mAType);
+        $result = trader_ppo($real, $fastPeriod, $slowPeriod, $mAType);
 
         $this->handleErrors();
 
@@ -2538,7 +2538,7 @@ trait CallsFunctions
      */
     public function rsi(array $real, int $timePeriod = 14): array
     {
-        $result = trader_rocr($real, $timePeriod);
+        $result = trader_rsi($real, $timePeriod);
 
         $this->handleErrors();
 
@@ -2717,7 +2717,7 @@ trait CallsFunctions
      */
     public function stddev(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
     {
-        $result = trader_stddev($real);
+        $result = trader_stddev($real, $timePeriod, $nbDev);
 
         $this->handleErrors();
 
