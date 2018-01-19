@@ -39,7 +39,7 @@ trait HandlesErrors
     {
         $errorCode = trader_errno();
         if (isset(static::$errors[$errorCode])) {
-            throw new BadFunctionCallException(static::$errors[$errorCode]);
+            throw new BadFunctionCallException(static::$errors[$errorCode], $errorCode);
         }
     }
 }
