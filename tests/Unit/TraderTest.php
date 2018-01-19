@@ -2,6 +2,7 @@
 
 namespace Laratrade\Trader\Tests\Unit;
 
+use BadFunctionCallException;
 use Laratrade\Trader\Trader;
 use ReflectionClass;
 
@@ -1514,5 +1515,15 @@ class TraderTest extends TestCase
             trader_wma(static::$close, 30),
             static::$trader->wma(static::$close, 30)
         );
+    }
+
+    /** @test */
+    public function it_handles_errors_by_throwing_exception()
+    {
+        $this->expectException(BadFunctionCallException::class);
+        $this->expectExceptionCode(static::$trader::ERR_BAD_PARAM);
+        $this->expectExceptionMessage('Bad parameter');
+
+        static::$trader->wma([]);
     }
 }
