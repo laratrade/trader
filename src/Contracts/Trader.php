@@ -1487,7 +1487,7 @@ interface Trader
      *
      * @return array Returns an array with calculated data.
      */
-    public function midprice(array $high, array $low, int $timePeriod = 14);
+    public function midprice(array $high, array $low, int $timePeriod = 14): array;
 
     /**
      * Lowest value over a specified period.

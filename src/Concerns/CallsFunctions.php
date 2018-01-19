@@ -2218,7 +2218,7 @@ trait CallsFunctions
      *
      * @return array Returns an array with calculated data.
      */
-    public function midprice(array $high, array $low, int $timePeriod = 14)
+    public function midprice(array $high, array $low, int $timePeriod = 14): array
     {
         $result = trader_midprice($high, $low, $timePeriod);
 
