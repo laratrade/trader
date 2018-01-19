@@ -105,171 +105,579 @@ class MyClass
 }
 ```
 
-## Functions
+## Constants
 
-- [`acos`](#acos)
-- [`ad`](#ad)
-- [`add`](#add)
-- [`adosc`](#adosc)
-- [`adx`](#adx)
-- [`adxr`](#adxr)
-- [`apo`](#apo)
-- [`aroon`](#aroon)
-- [`aroonosc`](#aroonosc)
-- [`asin`](#asin)
-- [`atan`](#atan)
-- [`atr`](#atr)
-- [`avgprice`](#avgprice)
-- [`bbands`](#bbands)
-- [`beta`](#beta)
-- [`bop`](#bop)
-- [`cci`](#cci)
-- [`cdl2crows`](#cdl2crows)
-- [`cdl3blackcrows`](#cdl3blackcrows)
-- [`cdl3inside`](#cdl3inside)
-- [`cdl3linestrike`](#cdl3linestrike)
-- [`cdl3outside`](#cdl3outside)
-- [`cdl3starsinsouth`](#cdl3starsinsouth)
-- [`cdl3whitesoldiers`](#cdl3whitesoldiers)
-- [`cdlabandonedbaby`](#cdlabandonedbaby)
-- [`cdladvanceblock`](#cdladvanceblock)
-- [`cdlbelthold`](#cdlbelthold)
-- [`cdlbreakaway`](#cdlbreakaway)
-- [`cdlclosingmarubozu`](#cdlclosingmarubozu)
-- [`cdlconcealbabyswall`](#cdlconcealbabyswall)
-- [`cdlcounterattack`](#cdlcounterattack)
-- [`cdldarkcloudcover`](#cdldarkcloudcover)
-- [`cdldoji`](#cdldoji)
-- [`cdldojistar`](#cdldojistar)
-- [`cdldragonflydoji`](#cdldragonflydoji)
-- [`cdlengulfing`](#cdlengulfing)
-- [`cdleveningdojistar`](#cdleveningdojistar)
-- [`cdleveningstar`](#cdleveningstar)
-- [`cdlgapsidesidewhite`](#cdlgapsidesidewhite)
-- [`cdlgravestonedoji`](#cdlgravestonedoji)
-- [`cdlhammer`](#cdlhammer)
-- [`cdlhangingman`](#cdlhangingman)
-- [`cdlharami`](#cdlharami)
-- [`cdlharamicross`](#cdlharamicross)
-- [`cdlhighwave`](#cdlhighwave)
-- [`cdlhikkake`](#cdlhikkake)
-- [`cdlhikkakemod`](#cdlhikkakemod)
-- [`cdlhomingpigeon`](#cdlhomingpigeon)
-- [`cdlidentical3crows`](#cdlidentical3crows)
-- [`cdlinneck`](#cdlinneck)
-- [`cdlinvertedhammer`](#cdlinvertedhammer)
-- [`cdlkicking`](#cdlkicking)
-- [`cdlkickingbylength`](#cdlkickingbylength)
-- [`cdlladderbottom`](#cdlladderbottom)
-- [`cdllongleggeddoji`](#cdllongleggeddoji)
-- [`cdllongline`](#cdllongline)
-- [`cdlmarubozu`](#cdlmarubozu)
-- [`cdlmatchinglow`](#cdlmatchinglow)
-- [`cdlmathold`](#cdlmathold)
-- [`cdlmorningdojistar`](#cdlmorningdojistar)
-- [`cdlmorningstar`](#cdlmorningstar)
-- [`cdlonneck`](#cdlonneck)
-- [`cdlpiercing`](#cdlpiercing)
-- [`cdlrickshawman`](#cdlrickshawman)
-- [`cdlrisefall3methods`](#cdlrisefall3methods)
-- [`cdlseparatinglines`](#cdlseparatinglines)
-- [`cdlshootingstar`](#cdlshootingstar)
-- [`cdlshortline`](#cdlshortline)
-- [`cdlspinningtop`](#cdlspinningtop)
-- [`cdlstalledpattern`](#cdlstalledpattern)
-- [`cdlsticksandwich`](#cdlsticksandwich)
-- [`cdltakuri`](#cdltakuri)
-- [`cdltasukigap`](#cdltasukigap)
-- [`cdlthrusting`](#cdlthrusting)
-- [`cdltristar`](#cdltristar)
-- [`cdlunique3river`](#cdlunique3river)
-- [`cdlupsidegap2crows`](#cdlupsidegap2crows)
-- [`cdlxsidegap3methods`](#cdlxsidegap3methods)
-- [`ceil`](#ceil)
-- [`cmo`](#cmo)
-- [`correl`](#correl)
-- [`cos`](#cos)
-- [`cosh`](#cosh)
-- [`dema`](#dema)
-- [`div`](#div)
-- [`dx`](#dx)
-- [`ema`](#ema)
-- [`errno`](#errno)
-- [`exp`](#exp)
-- [`floor`](#floor)
-- [`get_compat`](#get_compat)
-- [`get_unstable_period`](#get_unstable_period)
-- [`ht_dcperiod`](#ht_dcperiod)
-- [`ht_dcphase`](#ht_dcphase)
-- [`ht_phasor`](#ht_phasor)
-- [`ht_sine`](#ht_sine)
-- [`ht_trendline`](#ht_trendline)
-- [`ht_trendmode`](#ht_trendmode)
-- [`kama`](#kama)
-- [`linearreg_angle`](#linearreg_angle)
-- [`linearreg_intercept`](#linearreg_intercept)
-- [`linearreg_slope`](#linearreg_slope)
-- [`linearreg`](#linearreg)
-- [`ln`](#ln)
-- [`log10`](#log10)
-- [`ma`](#ma)
-- [`macd`](#macd)
-- [`macdext`](#macdext)
-- [`macdfix`](#macdfix)
-- [`mama`](#mama)
-- [`mavp`](#mavp)
-- [`max`](#max)
-- [`maxindex`](#maxindex)
-- [`medprice`](#medprice)
-- [`mfi`](#mfi)
-- [`midpoint`](#midpoint)
-- [`midprice`](#midprice)
-- [`min`](#min)
-- [`minindex`](#minindex)
-- [`minmax`](#minmax)
-- [`minmaxindex`](#minmaxindex)
-- [`minus_di`](#minus_di)
-- [`minus_dm`](#minus_dm)
-- [`mom`](#mom)
-- [`mult`](#mult)
-- [`natr`](#natr)
-- [`obv`](#obv)
-- [`plus_di`](#plus_di)
-- [`plus_dm`](#plus_dm)
-- [`ppo`](#ppo)
-- [`roc`](#roc)
-- [`rocp`](#rocp)
-- [`rocr100`](#rocr100)
-- [`rocr`](#rocr)
-- [`rsi`](#rsi)
-- [`sar`](#sar)
-- [`sarext`](#sarext)
-- [`set_compat`](#set_compat)
-- [`set_unstable_period`](#set_unstable_period)
-- [`sin`](#sin)
-- [`sinh`](#sinh)
-- [`sma`](#sma)
-- [`sqrt`](#sqrt)
-- [`stddev`](#stddev)
-- [`stoch`](#stoch)
-- [`stochf`](#stochf)
-- [`stochrsi`](#stochrsi)
-- [`sub`](#sub)
-- [`sum`](#sum)
-- [`t3`](#t3)
-- [`tan`](#tan)
-- [`tanh`](#tanh)
-- [`tema`](#tema)
-- [`trange`](#trange)
-- [`trima`](#trima)
-- [`trix`](#trix)
-- [`tsf`](#tsf)
-- [`typprice`](#typprice)
-- [`ultosc`](#ultosc)
-- [`var`](#var)
-- [`wclprice`](#wclprice)
-- [`willr`](#willr)
-- [`wma`](#wma)
+### `MA_TYPE_SMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_SMA;
+```
+
+### `MA_TYPE_EMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_EMA;
+```
+
+### `MA_TYPE_WMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_WMA;
+```
+
+### `MA_TYPE_DEMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_DEMA;
+```
+
+### `MA_TYPE_TEMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_TEMA;
+```
+
+### `MA_TYPE_TRIMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_TRIMA;
+```
+
+### `MA_TYPE_KAMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_KAMA;
+```
+
+### `MA_TYPE_MAMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_MAMA;
+```
+
+### `MA_TYPE_T3`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::MA_TYPE_T3;
+```
+
+### `REAL_MIN`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::REAL_MIN;
+```
+
+### `REAL_MAX`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::REAL_MAX;
+```
+
+### `FUNC_UNST_ADX`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_ADX;
+```
+
+### `FUNC_UNST_ADXR`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_ADXR;
+```
+
+### `FUNC_UNST_ATR`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_ATR;
+```
+
+### `FUNC_UNST_CMO`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_CMO;
+```
+
+### `FUNC_UNST_DX`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_DX;
+```
+
+### `FUNC_UNST_EMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_EMA;
+```
+
+### `FUNC_UNST_HT_DCPERIOD`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_HT_DCPERIOD;
+```
+
+### `FUNC_UNST_HT_DCPHASE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_HT_DCPHASE;
+```
+
+### `FUNC_UNST_HT_PHASOR`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_HT_PHASOR;
+```
+
+### `FUNC_UNST_HT_SINE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_HT_SINE;
+```
+
+### `FUNC_UNST_HT_TRENDLINE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_HT_TRENDLINE;
+```
+
+### `FUNC_UNST_HT_TRENDMODE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_HT_TRENDMODE;
+```
+
+### `FUNC_UNST_KAMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_KAMA;
+```
+
+### `FUNC_UNST_MAMA`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_MAMA;
+```
+
+### `FUNC_UNST_MFI`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_MFI;
+```
+
+### `FUNC_UNST_MINUS_DI`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_MINUS_DI;
+```
+
+### `FUNC_UNST_MINUS_DM`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_MINUS_DM;
+```
+
+### `FUNC_UNST_NATR`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_NATR;
+```
+
+### `FUNC_UNST_PLUS_DI`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_PLUS_DI;
+```
+
+### `FUNC_UNST_PLUS_DM`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_PLUS_DM;
+```
+
+### `FUNC_UNST_RSI`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_RSI;
+```
+
+### `FUNC_UNST_STOCHRSI`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_STOCHRSI;
+```
+
+### `FUNC_UNST_T3`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_T3;
+```
+
+### `FUNC_UNST_ALL`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_ALL;
+```
+
+### `FUNC_UNST_NONE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::FUNC_UNST_NONE;
+```
+
+### `COMPATIBILITY_DEFAULT`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::COMPATIBILITY_DEFAULT;
+```
+
+### `COMPATIBILITY_METASTOCK`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::COMPATIBILITY_METASTOCK;
+```
+
+### `ERR_SUCCESS`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_SUCCESS;
+```
+
+### `ERR_LIB_NOT_INITIALIZE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_LIB_NOT_INITIALIZE;
+```
+
+### `ERR_BAD_PARAM`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_BAD_PARAM;
+```
+
+### `ERR_ALLOC_ERR`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_ALLOC_ERR;
+```
+
+### `ERR_GROUP_NOT_FOUND`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_GROUP_NOT_FOUND;
+```
+
+### `ERR_FUNC_NOT_FOUND`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_FUNC_NOT_FOUND;
+```
+
+### `ERR_INVALID_HANDLE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_INVALID_HANDLE;
+```
+
+### `ERR_INVALID_PARAM_HOLDER`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_INVALID_PARAM_HOLDER;
+```
+
+### `ERR_INVALID_PARAM_HOLDER_TYPE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_INVALID_PARAM_HOLDER_TYPE;
+```
+
+### `ERR_INVALID_PARAM_FUNCTION`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_INVALID_PARAM_FUNCTION;
+```
+
+### `ERR_INPUT_NOT_ALL_INITIALIZE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_INPUT_NOT_ALL_INITIALIZE;
+```
+
+### `ERR_OUTPUT_NOT_ALL_INITIALIZE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_OUTPUT_NOT_ALL_INITIALIZE;
+```
+
+### `ERR_OUT_OF_RANGE_START_INDEX`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_OUT_OF_RANGE_START_INDEX;
+```
+
+### `ERR_OUT_OF_RANGE_END_INDEX`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_OUT_OF_RANGE_END_INDEX;
+```
+
+### `ERR_INVALID_LIST_TYPE`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_INVALID_LIST_TYPE;
+```
+
+### `ERR_BAD_OBJECT`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_BAD_OBJECT;
+```
+
+### `ERR_NOT_SUPPORTED`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_NOT_SUPPORTED;
+```
+
+### `ERR_INTERNAL_ERROR`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_INTERNAL_ERROR;
+```
+
+### `ERR_UNKNOWN_ERROR`
+
+``` php
+<?php
+
+use Laratrade\Trader\Contracts\Trader;
+
+echo Trader::ERR_UNKNOWN_ERROR;
+```
+
+## Functions
 
 ### `acos`
 
