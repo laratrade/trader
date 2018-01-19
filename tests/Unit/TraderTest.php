@@ -855,6 +855,15 @@ class TraderTest extends TestCase
     }
 
     /** @test */
+    public function it_executes_errno_correctly()
+    {
+        $this->assertEquals(
+            trader_errno(),
+            static::$trader->errno()
+        );
+    }
+
+    /** @test */
     public function it_executes_exp_correctly()
     {
         $this->assertEquals(
