@@ -1309,6 +1309,28 @@ class TraderTest extends TestCase
     }
 
     /** @test */
+    public function it_executes_set_compat_correctly()
+    {
+        static::$trader->set_compat(TRADER_COMPATIBILITY_DEFAULT);
+
+        $this->assertEquals(
+            TRADER_COMPATIBILITY_DEFAULT,
+            trader_get_compat()
+        );
+    }
+
+    /** @test */
+    public function it_executes_set_unstable_period_correctly()
+    {
+        static::$trader->set_unstable_period(TRADER_FUNC_UNST_ADX, 14);
+
+        $this->assertEquals(
+            14,
+            trader_get_unstable_period(TRADER_FUNC_UNST_ADX)
+        );
+    }
+
+    /** @test */
     public function it_executes_sin_correctly()
     {
         $this->assertEquals(
