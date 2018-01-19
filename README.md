@@ -1781,7 +1781,7 @@ $result = Trader::sarext(array $high, array $low, float $startValue = 0.0, float
 Set compatibility mode
 
 ``` php
-$result = Trader::set_compat(int $compatId);
+Trader::set_compat(int $compatId);
 ```
 
 ### `set_unstable_period`
@@ -1789,7 +1789,7 @@ $result = Trader::set_compat(int $compatId);
 Set unstable period
 
 ``` php
-$result = Trader::set_unstable_period(int $functionId, int $timePeriod);
+Trader::set_unstable_period(int $functionId, int $timePeriod);
 ```
 
 ### `sin`
