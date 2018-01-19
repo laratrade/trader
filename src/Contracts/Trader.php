@@ -1698,14 +1698,14 @@ interface Trader
      *
      * @param array $high                  High price, array of real values.
      * @param array $low                   Low price, array of real values.
-     * @param float $startValue            Start value and direction. 0 for Auto, >0 for Long, <0 for Short. Valid range from TRADER_REAL_MIN to TRADER_REAL_MAX.
-     * @param float $offsetOnReverse       Percent offset added/removed to initial stop on short/long reversal. Valid range from 0 to TRADER_REAL_MAX.
-     * @param float $accelerationInitLong  Acceleration Factor initial value for the Long direction. Valid range from 0 to TRADER_REAL_MAX.
-     * @param float $accelerationLong      Acceleration Factor for the Long direction. Valid range from 0 to TRADER_REAL_MAX.
-     * @param float $accelerationMaxLong   Acceleration Factor maximum value for the Long direction. Valid range from 0 to TRADER_REAL_MAX.
-     * @param float $accelerationInitShort Acceleration Factor initial value for the Short direction. Valid range from 0 to TRADER_REAL_MAX.
-     * @param float $accelerationShort     Acceleration Factor for the Short direction. Valid range from 0 to TRADER_REAL_MAX.
-     * @param float $accelerationMaxShort  Acceleration Factor maximum value for the Short direction. Valid range from 0 to TRADER_REAL_MAX.
+     * @param float $startValue            Start value and direction. 0 for Auto, >0 for Long, <0 for Short. Valid range from REAL_MIN to REAL_MAX.
+     * @param float $offsetOnReverse       Percent offset added/removed to initial stop on short/long reversal. Valid range from 0 to REAL_MAX.
+     * @param float $accelerationInitLong  Acceleration Factor initial value for the Long direction. Valid range from 0 to REAL_MAX.
+     * @param float $accelerationLong      Acceleration Factor for the Long direction. Valid range from 0 to REAL_MAX.
+     * @param float $accelerationMaxLong   Acceleration Factor maximum value for the Long direction. Valid range from 0 to REAL_MAX.
+     * @param float $accelerationInitShort Acceleration Factor initial value for the Short direction. Valid range from 0 to REAL_MAX.
+     * @param float $accelerationShort     Acceleration Factor for the Short direction. Valid range from 0 to REAL_MAX.
+     * @param float $accelerationMaxShort  Acceleration Factor maximum value for the Short direction. Valid range from 0 to REAL_MAX.
      *
      * @return array Returns an array with calculated data.
      */
@@ -1727,7 +1727,7 @@ interface Trader
      *
      * Set compatibility mode which will affect the way calculations are done by all the extension functions.
      *
-     * @param int $compatId Compatibility Id. TRADER_COMPATIBILITY_* series of constants should be used.
+     * @param int $compatId Compatibility Id. COMPATIBILITY_* series of constants should be used.
      */
     public function set_compat(int $compatId);
 
