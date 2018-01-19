@@ -872,6 +872,24 @@ class TraderTest extends TestCase
     }
 
     /** @test */
+    public function it_executes_get_compat_correctly()
+    {
+        $this->assertEquals(
+            trader_get_compat(),
+            static::$trader->get_compat()
+        );
+    }
+
+    /** @test */
+    public function it_executes_get_unstable_period_correctly()
+    {
+        $this->assertEquals(
+            trader_get_unstable_period(TRADER_FUNC_UNST_ADX),
+            static::$trader->get_unstable_period(TRADER_FUNC_UNST_ADX)
+        );
+    }
+
+    /** @test */
     public function it_executes_ht_dcperiod_correctly()
     {
         $this->assertEquals(

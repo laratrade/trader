@@ -1771,7 +1771,7 @@ trait CallsFunctions
      */
     public function get_unstable_period(int $functionId): int
     {
-        return trader_get_unstable_period();
+        return trader_get_unstable_period($functionId);
     }
 
     /**
