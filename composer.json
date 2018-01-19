@@ -14,12 +14,6 @@
             "email": "inasyrov@ya.ru",
             "homepage": "https://github.com/nasyrov",
             "role": "Developer"
-        },
-        {
-            "name": "Patrick Teunissen",
-            "email": "patrick@yiiandme.com",
-            "homepage": "https://github.com/amavis442",
-            "role": "Developer"
         }
     ],
     "require": {

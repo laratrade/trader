@@ -684,7 +684,7 @@ echo Trader::ERR_UNKNOWN_ERROR;
 Vector Trigonometric ACos
 
 ``` php
-$acos = Trader::acos($real);
+$result = Trader::acos($real);
 ```
 
 ### `ad`
@@ -692,7 +692,7 @@ $acos = Trader::acos($real);
 Chaikin A/D Line
 
 ``` php
-$ad = Trader::ad($real);
+$result = Trader::ad(array $high, array $low, array $close, array $volume);
 ```
 
 ### `add`
@@ -700,7 +700,7 @@ $ad = Trader::ad($real);
 Vector Arithmetic Add
 
 ``` php
-$add = Trader::add($real);
+$result = Trader::add(array $real0, array $real1): array;
 ```
 
 ### `adosc`
@@ -708,7 +708,7 @@ $add = Trader::add($real);
 Chaikin A/D Oscillator
 
 ``` php
-$add = Trader::add($real);
+$result = Trader::adosc(array $high, array $low, array $close, array $volume, int $fastPeriod = 3, int $slowPeriod = 10);
 ```
 
 ### `adx`
@@ -716,7 +716,7 @@ $add = Trader::add($real);
 Average Directional Movement Index
 
 ``` php
-$adx = Trader::adx($real);
+$result = Trader::adx(array $high, array $low, array $close, int $timePeriod = 14);
 ```
 
 ### `adxr`
@@ -724,7 +724,7 @@ $adx = Trader::adx($real);
 Average Directional Movement Index Rating
 
 ``` php
-$adx = Trader::adx($real);
+$result = Trader::adxr(array $high, array $low, array $close, int $timePeriod = 14);
 ```
 
 ### `apo`
@@ -732,116 +732,224 @@ $adx = Trader::adx($real);
 Absolute Price Oscillator
 
 ``` php
-$adx = Trader::apo($real);
+$result = Trader::apo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0);
 ```
 
 ### `aroon`
 
 Aroon
 
+``` php
+$result = Trader::aroon(array $high, array $low, int $timePeriod = 14);
+```
+
 ### `aroonosc`
 
 Aroon Oscillator
+
+``` php
+$result = Trader::aroonosc(array $high, array $low, int $timePeriod = 14);
+```
 
 ### `asin`
 
 Vector Trigonometric ASin
 
+``` php
+$result = Trader::asin(array $real);
+```
+
 ### `atan`
 
 Vector Trigonometric ATan
+
+``` php
+$result = Trader::atan(array $real);
+```
 
 ### `atr`
 
 Average True Range
 
+``` php
+$result = Trader::atr(array $high, array $low, array $close, int $timePeriod = 14);
+```
+
 ### `avgprice`
 
 Average Price
+
+``` php
+$result = Trader::avgprice(array $open, array $high, array $low, array $close);
+```
 
 ### `bbands`
 
 Bollinger Bands
 
+``` php
+$result = Trader::bbands(array $real, int $timePeriod = 5, float $nbDevUp = 2.0, float $nbDevDn = 2.0, int $mAType = 0);
+```
+
 ### `beta`
 
 Beta
+
+``` php
+$result = Trader::beta(array $real0, array $real1, int $timePeriod = 5);
+```
 
 ### `bop`
 
 Balance Of Power
 
+``` php
+$result = Trader::bop(array $open, array $high, array $low, array $close);
+```
+
 ### `cci`
 
 Commodity Channel Index
+
+``` php
+$result = Trader::cci(array $high, array $low, array $close, int $timePeriod = null);
+```
 
 ### `cdl2crows`
 
 Two Crows
 
+``` php
+$result = Trader::cdl2crows(array $open, array $high, array $low, array $close);
+```
+
 ### `cdl3blackcrows`
 
 Three Black Crows
+
+``` php
+$result = Trader::cdl3blackcrows(array $open, array $high, array $low, array $close);
+```
 
 ### `cdl3inside`
 
 Three Inside Up/Down
 
+``` php
+$result = Trader::cdl3inside(array $open, array $high, array $low, array $close);
+```
+
 ### `cdl3linestrike`
 
 Three-Line Strike
+
+``` php
+$result = Trader::cdl3linestrike(array $open, array $high, array $low, array $close);
+```
 
 ### `cdl3outside`
 
 Three Outside Up/Down
 
+``` php
+$result = Trader::cdl3outside(array $open, array $high, array $low, array $close);
+```
+
 ### `cdl3starsinsouth`
 
 Three Stars In The South
+
+``` php
+$result = Trader::cdl3starsinsouth(array $open, array $high, array $low, array $close);
+```
 
 ### `cdl3whitesoldiers`
 
 Three Advancing White Soldiers
 
+``` php
+$result = Trader::cdl3whitesoldiers(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlabandonedbaby`
 
 Abandoned Baby
+
+``` php
+$result = Trader::cdlabandonedbaby(array $open, array $high, array $low, array $close, float $penetration = 0.3);
+```
 
 ### `cdladvanceblock`
 
 Advance Block
 
+``` php
+$result = Trader::cdladvanceblock(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlbelthold`
 
 Belt-hold
+
+``` php
+$result = Trader::cdlbelthold(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlbreakaway`
 
 Breakaway
 
+``` php
+$result = Trader::cdlbreakaway(array $open, array $high, array $low, array $close): array;
+```
+
 ### `cdlclosingmarubozu`
 
 Closing Marubozu
+
+``` php
+$result = Trader::cdlclosingmarubozu(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlconcealbabyswall`
 
 Concealing Baby Swallow
 
+``` php
+$result = Trader::cdlclosingmarubozu(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlcounterattack`
 
 Counterattack
+
+``` php
+$result = Trader::cdlconcealbabyswall(array $open, array $high, array $low, array $close);
+```
 
 ### `cdldarkcloudcover`
 
 Dark Cloud Cover
 
+``` php
+$result = Trader::cdldarkcloudcover(array $open, array $high, array $low, array $close, float $penetration = 0.5);
+```
+
 ### `cdldoji`
 
 Doji
 
+``` php
+$result = Trader::cdldoji(array $open, array $high, array $low, array $close);
+```
+
 ### `cdldojistar`
 
 Doji Star
+
+``` php
+$result = Trader::cdldojistar(array $open, array $high, array $low, array $close);
+```
 
 ### `cdldragonflydoji`
 
@@ -1055,309 +1163,617 @@ Directional Movement Index
 
 Exponential Moving Average
 
+``` php
+$result = Trader::ema(array $real, int $timePeriod = 30);
+```
+
 ### `errno`
 
  Get error code
+ 
+``` php
+$result = Trader::errno();
+```
 
 ### `exp`
 
 Vector Arithmetic Exp
 
+``` php
+$result = Trader::exp(array $real);
+```
+
 ### `floor`
 
 Vector Floor
+
+``` php
+$result = Trader::floor(array $real);
+```
 
 ### `get_compat`
 
 Get compatibility mode
 
+``` php
+$result = Trader::get_compat();
+```
+
 ### `get_unstable_period`
 
 Get unstable period
+
+``` php
+$result = Trader::get_unstable_period(int $functionId);
+```
 
 ### `ht_dcperiod`
 
 Hilbert Transform - Dominant Cycle Period
 
+``` php
+$result = Trader::ht_dcperiod(array $real);
+```
+
 ### `ht_dcphase`
 
 Hilbert Transform - Dominant Cycle Phase
+
+``` php
+$result = Trader::ht_dcphase(array $real);
+```
 
 ### `ht_phasor`
 
 Hilbert Transform - Phasor Components
 
+``` php
+$result = Trader::ht_phasor(array $open, array $close);
+```
+
 ### `ht_sine`
 
 Hilbert Transform - SineWave
+
+``` php
+$result = Trader::ht_sine(array $open, array $close);
+```
 
 ### `ht_trendline`
 
 Hilbert Transform - Instantaneous Trendline
 
+``` php
+$result = Trader::ht_trendline(array $real);
+```
+
 ### `ht_trendmode`
 
 Hilbert Transform - Trend vs Cycle Mode
+
+``` php
+$result = Trader::ht_trendmode(array $real);
+```
 
 ### `kama`
 
 Kaufman Adaptive Moving Average
 
+``` php
+$result = Trader::kama(array $real, int $timePeriod = 30);
+```
+
 ### `linearreg_angle`
 
 Linear Regression Angle
+
+``` php
+$result = Trader::linearreg_angle(array $real, int $timePeriod = 14);
+```
 
 ### `linearreg_intercept`
 
 Linear Regression Intercept
 
+``` php
+$result = Trader::linearreg_intercept(array $real, int $timePeriod = 14);
+```
+
 ### `linearreg_slope`
 
 Linear Regression Slope
+
+``` php
+$result = Trader::linearreg_slope(array $real, int $timePeriod = 14);
+```
 
 ### `linearreg`
 
 Linear Regression
 
+``` php
+$result = Trader::linearreg(array $real, int $timePeriod = 14);
+```
+
 ### `ln`
 
 Vector Log Natural
+
+``` php
+$result = Trader::ln(array $real);
+```
 
 ### `log10`
 
 Vector Log10
 
+``` php
+$result = Trader::log10(array $real);
+```
+
 ### `ma`
 
 Moving average
+
+``` php
+$result = Trader::ma(array $real, int $timePeriod = 30, int $mAType = 0);
+```
 
 ### `macd`
 
 Moving Average Convergence/Divergence
 
+``` php
+$result = Trader::macd(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $signalPeriod = 9);
+```
+
 ### `macdext`
 
 MACD with controllable MA type
+
+``` php
+$result = Trader::macdext(array $real, int $fastPeriod = 12, int $fastMAType = 0, int $slowPeriod = 26, int $slowMAType = 0, int $signalPeriod = 9);
+```
 
 ### `macdfix`
 
 Moving Average Convergence/Divergence Fix 12/26
 
+``` php
+$result = Trader::macdfix(array $real, int $signalPeriod = 9);
+```
+
 ### `mama`
 
 MESA Adaptive Moving Average
+
+``` php
+$result = Trader::mama(array $real, float $fastLimit = 0.5, float $slowLimit = 0.05);
+```
 
 ### `mavp`
 
 Moving average with variable period
 
+``` php
+$result = Trader::mavp(array $real, array $periods, int $minPeriod = 2, int $maxPeriod = 30, int $mAType = 0);
+```
+
 ### `max`
 
 Highest value over a specified period
+
+``` php
+$result = Trader::max(array $real, int $timePeriod = 30);
+```
 
 ### `maxindex`
 
 Index of highest value over a specified period
 
+``` php
+$result = Trader::maxindex(array $real, int $timePeriod = 30);
+```
+
 ### `medprice`
 
 Median Price
+
+``` php
+$result = Trader::medprice(array $high, array $low);
+```
 
 ### `mfi`
 
 Money Flow Index
 
+``` php
+$result = Trader::mfi(array $high, array $low, array $close, array $volume, int $timePeriod = 14);
+```
+
 ### `midpoint`
 
 MidPoint over period
+
+``` php
+$result = Trader::midpoint(array $real, int $timePeriod = 14);
+```
 
 ### `midprice`
 
 Midpoint Price over period
 
+``` php
+$result = Trader::midprice(array $high, array $low, int $timePeriod = 14);
+```
+
 ### `min`
 
 Lowest value over a specified period
+
+``` php
+$result = Trader::min(array $real, int $timePeriod = 30);
+```
 
 ### `minindex`
 
 Index of lowest value over a specified period
 
+``` php
+$result = Trader::minindex(array $real, int $timePeriod = 30);
+```
+
 ### `minmax`
 
 Lowest and highest values over a specified period
+
+``` php
+$result = Trader::minmax(array $real, int $timePeriod = 30);
+```
 
 ### `minmaxindex`
 
 Indexes of lowest and highest values over a specified period
 
+``` php
+$result = Trader::minmaxindex(array $real, int $timePeriod = 30);
+```
+
 ### `minus_di`
 
 Minus Directional Indicator
+
+``` php
+$result = Trader::minus_di(array $high, array $low, array $close, int $timePeriod = 14);
+```
 
 ### `minus_dm`
 
 Minus Directional Movement
 
+``` php
+$result = Trader::minus_dm(array $high, array $low, int $timePeriod = 14);
+```
+
 ### `mom`
 
 Momentum
+
+``` php
+$result = Trader::mom(array $real, int $timePeriod = 10);
+```
 
 ### `mult`
 
 Vector Arithmetic Mult
 
+``` php
+$result = Trader::mult(array $real0, array $real1);
+```
+
 ### `natr`
 
 Normalized Average True Range
+
+``` php
+$result = Trader::natr(array $high, array $low, array $close, int $timePeriod = 14);
+```
 
 ### `obv`
 
 On Balance Volume
 
+``` php
+$result = Trader::obv(array $real, array $volume);
+```
+
 ### `plus_di`
 
 Plus Directional Indicator
+
+``` php
+$result = Trader::plus_di(array $high, array $low, array $close, int $timePeriod = 14);
+```
 
 ### `plus_dm`
 
 Plus Directional Movement
 
+``` php
+$result = Trader::plus_dm(array $high, array $low, int $timePeriod = 14);
+```
+
 ### `ppo`
 
 Percentage Price Oscillator
+
+``` php
+$result = Trader::ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = 0);
+```
 
 ### `roc`
 
 Rate of change : ((price/prevPrice)-1)*100
 
+``` php
+$result = Trader::roc(array $real, int $timePeriod = 10);
+```
+
 ### `rocp`
 
 Rate of change Percentage: (price-prevPrice)/prevPrice
+
+``` php
+$result = Trader::rocp(array $real, int $timePeriod = 10);
+```
 
 ### `rocr100`
 
 Rate of change ratio 100 scale: (price/prevPrice)*100
 
+``` php
+$result = Trader::rocr100(array $real, int $timePeriod = 10);
+```
+
 ### `rocr`
 
 Rate of change ratio: (price/prevPrice)
+
+``` php
+$result = Trader::rocr(array $real, int $timePeriod = 10);
+```
 
 ### `rsi`
 
 Relative Strength Index
 
+``` php
+$result = Trader::rsi(array $real, int $timePeriod = 14);
+```
+
 ### `sar`
 
 Parabolic SAR
+
+``` php
+$result = Trader::sar(array $high, array $low, float $acceleration = 0.02, float $maximum = 0.2);
+```
 
 ### `sarext`
 
 Parabolic SAR - Extended
 
+``` php
+$result = Trader::sarext(array $high, array $low, float $startValue = 0.0, float $offsetOnReverse = 0.0, float $accelerationInitLong = 0.02, float $accelerationLong = 0.02, float $accelerationMaxLong = 0.2, float $accelerationInitShort = 0.02, float $accelerationShort = 0.02, float $accelerationMaxShort = 0.2);
+```
+
 ### `set_compat`
 
 Set compatibility mode
+
+``` php
+$result = Trader::set_compat(int $compatId);
+```
 
 ### `set_unstable_period`
 
 Set unstable period
 
+``` php
+$result = Trader::set_unstable_period(int $functionId, int $timePeriod);
+```
+
 ### `sin`
 
 Vector Trigonometric Sin
+
+``` php
+$result = Trader::sin(array $real);
+```
 
 ### `sinh`
 
 Vector Trigonometric Sinh
 
+``` php
+$result = Trader::sinh(array $real);
+```
+
 ### `sma`
 
 Simple Moving Average
+
+``` php
+$result = Trader::sma(array $real, int $timePeriod = 30);
+```
 
 ### `sqrt`
 
 Vector Square Root
 
+``` php
+$result = Trader::sqrt(array $real);
+```
+
 ### `stddev`
 
 Standard Deviation
+
+``` php
+$result = Trader::stddev(array $real, int $timePeriod = 5, float $nbDev = 1.0);
+```
 
 ### `stoch`
 
 Stochastic
 
+``` php
+$result = Trader::stoch(array $high, array $low, array $close, int $fastK_Period = 5, int $slowK_Period = 3, int $slowK_MAType = 0, int $slowD_Period = 3, int $slowD_MAType = 0);
+```
+
 ### `stochf`
 
 Stochastic Fast
+
+``` php
+$result = Trader::stochf(array $high, array $low, array $close, int $fastK_Period = 5, int $fastD_Period = 3, int $fastD_MAType = 0);
+```
 
 ### `stochrsi`
 
 Stochastic Relative Strength Index
 
+``` php
+$result = Trader::stochrsi(array $real, int $timePeriod = 14, int $fastK_Period = 5, int $fastD_Period = 3, int $fastD_MAType = 0);
+```
+
 ### `sub`
 
 Vector Arithmetic Subtraction
+
+``` php
+$result = Trader::sub(array $real0, array $real1);
+```
 
 ### `sum`
 
 Summation
 
+``` php
+$result = Trader::sum(array $real, int $timePeriod = 30);
+```
+
 ### `t3`
 
 Triple Exponential Moving Average (T3)
+
+``` php
+$result = Trader::t3(array $real, int $timePeriod = 5, float $vFactor = 0.7);
+```
 
 ### `tan`
 
 Vector Trigonometric Tan
 
+``` php
+$result = Trader::tan(array $real);
+```
+
 ### `tanh`
 
 Vector Trigonometric Tanh
+
+``` php
+$result = Trader::tanh(array $real);
+```
 
 ### `tema`
 
 Triple Exponential Moving Average
 
+``` php
+$result = Trader::tema(array $real, int $timePeriod = 30);
+```
+
 ### `trange`
 
 True Range
+
+``` php
+$result = Trader::trange(array $high, array $low, array $close);
+```
 
 ### `trima`
 
 Triangular Moving Average
 
+``` php
+$result = Trader::trima(array $real, int $timePeriod = 30);
+```
+
 ### `trix`
 
 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA
+
+``` php
+$result = Trader::trix(array $real, int $timePeriod = 30);
+```
 
 ### `tsf`
 
 Time Series Forecast
 
+``` php
+$result = Trader::tsf(array $real, int $timePeriod = 14);
+```
+
 ### `typprice`
 
 Typical Price
+
+``` php
+$result = Trader::typprice(array $high, array $low, array $close);
+```
 
 ### `ultosc`
 
 Ultimate Oscillator
 
+``` php
+$result = Trader::ultosc(array $high, array $low, array $close, int $timePeriod1 = 7, int $timePeriod2 = 14, int $timePeriod3 = 28);
+```
+
 ### `var`
 
 Variance
+
+``` php
+$result = Trader::var(array $real, int $timePeriod = 5, float $nbDev = 1.0);
+```
 
 ### `wclprice`
 
 Weighted Close Price
 
+``` php
+$result = Trader::wclprice(array $high, array $low, array $close);
+```
+
 ### `willr`
 
 Williams' %R
 
+``` php
+$result = Trader::willr(array $high, array $low, array $close, int $timePeriod = 14);
+```
+
 ### `wma`
 
 Weighted Moving Average
+
+``` php
+$result = Trader::wma(array $real, int $timePeriod = 30);
+```
 
 ## Testing
 
@@ -1372,7 +1788,6 @@ If you discover any security related issues, please use the issue tracker.
 ## Credits
 
 - [Evgenii Nasyrov](https://github.com/nasyrov)
-- [Patrick Teunissen](https://github.com/amavis442)
 - [All Contributors](../../contributors)
 
 ## License
