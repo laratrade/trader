@@ -35,7 +35,7 @@ trait HandlesErrors
     /**
      * Handle errors.
      */
-    public function handleErrors()
+    protected function handleErrors()
     {
         $errorCode = trader_errno();
         if (isset(static::$errors[$errorCode])) {
