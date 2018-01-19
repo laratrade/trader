@@ -700,7 +700,7 @@ $result = Trader::ad(array $high, array $low, array $close, array $volume);
 Vector Arithmetic Add
 
 ``` php
-$result = Trader::add(array $real0, array $real1): array;
+$result = Trader::add(array $real0, array $real1);
 ```
 
 ### `adosc`
@@ -900,7 +900,7 @@ $result = Trader::cdlbelthold(array $open, array $high, array $low, array $close
 Breakaway
 
 ``` php
-$result = Trader::cdlbreakaway(array $open, array $high, array $low, array $close): array;
+$result = Trader::cdlbreakaway(array $open, array $high, array $low, array $close);
 ```
 
 ### `cdlclosingmarubozu`
@@ -1119,45 +1119,89 @@ Tristar Pattern
 
 Unique 3 River
 
+``` php
+$result = Trader::cdlunique3river(array $open, array $high, array $low, array $close);
+```
+
 ### `cdlupsidegap2crows`
 
 Upside Gap Two Crows
+
+``` php
+$result = Trader::cdlupsidegap2crows(array $open, array $high, array $low, array $close);
+```
 
 ### `cdlxsidegap3methods`
 
 Upside/Downside Gap Three Methods
 
+``` php
+$result = Trader::cdlxsidegap3methods(array $open, array $high, array $low, array $close);
+```
+
 ### `ceil`
 
 Vector Ceil
+
+``` php
+$result = Trader::ceil(array $real);
+```
 
 ### `cmo`
 
 Chande Momentum Oscillator
 
+``` php
+$result = Trader::cmo(array $real, int $timePeriod = 14);
+```
+
 ### `correl`
 
 Pearson's Correlation Coefficient (r)
+
+``` php
+$result = Trader::correl(array $real0, array $real1, int $timePeriod = 30);
+```
 
 ### `cos`
 
 Vector Trigonometric Cos
 
+``` php
+$result = Trader::cos(array $real);
+```
+
 ### `cosh`
 
 Vector Trigonometric Cosh
+
+``` php
+$result = Trader::cosh(array $real);
+```
 
 ### `dema`
 
 Double Exponential Moving Average
 
+``` php
+$result = Trader::dema(array $real, int $timePeriod = 30);
+```
+
 ### `div`
 
 Vector Arithmetic Div
 
+``` php
+$result = Trader::div(array $real0, array $real1);
+```
+
 ### `dx`
 
 Directional Movement Index
+
+``` php
+$result = Trader::dx(array $high, array $low, array $close, int $timePeriod = 14);
+```
 
 ### `ema`
 
