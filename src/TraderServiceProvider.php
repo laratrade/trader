@@ -1,9 +1,9 @@
 <?php
 
-namespace Laratrade\Trader;
+namespace Nasyrov\Laravel\Trader;
 
 use Illuminate\Support\ServiceProvider;
-use Laratrade\Trader\Contracts\Trader as TraderContract;
+use Nasyrov\Laravel\Trader\Contracts\Trader as TraderContract;
 
 class TraderServiceProvider extends ServiceProvider
 {

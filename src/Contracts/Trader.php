@@ -1,10 +1,10 @@
 <?php
 
-namespace Laratrade\Trader\Contracts;
+namespace Nasyrov\Laravel\Trader\Contracts;
 
 /**
  * Interface Trader
- * @package Laratrade\Trader\Contracts
+ * @package Nasyrov\Laravel\Trader\Contracts
  *
  * phpcs:disable Generic.Files.LineLength
  * phpcs:disable PSR1.Methods.CamelCapsMethodName

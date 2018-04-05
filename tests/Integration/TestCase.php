@@ -1,8 +1,8 @@
 <?php
 
-namespace Laratrade\Trader\Tests\Integration;
+namespace Nasyrov\Laravel\Trader\Tests\Integration;
 
-use Laratrade\Trader\TraderServiceProvider;
+use Nasyrov\Laravel\Trader\TraderServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase

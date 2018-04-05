@@ -1,13 +1,13 @@
 <?php
 
-namespace Laratrade\Trader;
+namespace Nasyrov\Laravel\Trader;
 
 use BadFunctionCallException;
-use Laratrade\Trader\Contracts\Trader as TraderContract;
+use Nasyrov\Laravel\Trader\Contracts\Trader as TraderContract;
 
 /**
  * Class Trader
- * @package Laratrade\Trader
+ * @package Nasyrov\Laravel\Trader
  *
  * phpcs:disable Generic.Files.LineLength
  * phpcs:disable PSR1.Methods.CamelCapsMethodName

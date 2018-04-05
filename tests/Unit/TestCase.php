@@ -1,6 +1,6 @@
 <?php
 
-namespace Laratrade\Trader\Tests\Unit;
+namespace Nasyrov\Laravel\Trader\Tests\Unit;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

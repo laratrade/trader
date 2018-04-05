@@ -32,7 +32,7 @@ Via dependency injection
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 class MyClass
 {
@@ -70,7 +70,7 @@ Via facade
 ``` php
 <?php
 
-use Laratrade\Trader\Facades\Trader;
+use Nasyrov\Laravel\Trader\Facades\Trader;
 
 class MyClass
 {   
@@ -112,7 +112,7 @@ class MyClass
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_SMA;
 ```
@@ -122,7 +122,7 @@ echo Trader::MA_TYPE_SMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_EMA;
 ```
@@ -132,7 +132,7 @@ echo Trader::MA_TYPE_EMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_WMA;
 ```
@@ -142,7 +142,7 @@ echo Trader::MA_TYPE_WMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_DEMA;
 ```
@@ -152,7 +152,7 @@ echo Trader::MA_TYPE_DEMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_TEMA;
 ```
@@ -162,7 +162,7 @@ echo Trader::MA_TYPE_TEMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_TRIMA;
 ```
@@ -172,7 +172,7 @@ echo Trader::MA_TYPE_TRIMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_KAMA;
 ```
@@ -182,7 +182,7 @@ echo Trader::MA_TYPE_KAMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_MAMA;
 ```
@@ -192,7 +192,7 @@ echo Trader::MA_TYPE_MAMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::MA_TYPE_T3;
 ```
@@ -202,7 +202,7 @@ echo Trader::MA_TYPE_T3;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::REAL_MIN;
 ```
@@ -212,7 +212,7 @@ echo Trader::REAL_MIN;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::REAL_MAX;
 ```
@@ -222,7 +222,7 @@ echo Trader::REAL_MAX;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_ADX;
 ```
@@ -232,7 +232,7 @@ echo Trader::FUNC_UNST_ADX;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_ADXR;
 ```
@@ -242,7 +242,7 @@ echo Trader::FUNC_UNST_ADXR;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_ATR;
 ```
@@ -252,7 +252,7 @@ echo Trader::FUNC_UNST_ATR;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_CMO;
 ```
@@ -262,7 +262,7 @@ echo Trader::FUNC_UNST_CMO;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_DX;
 ```
@@ -272,7 +272,7 @@ echo Trader::FUNC_UNST_DX;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_EMA;
 ```
@@ -282,7 +282,7 @@ echo Trader::FUNC_UNST_EMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_HT_DCPERIOD;
 ```
@@ -292,7 +292,7 @@ echo Trader::FUNC_UNST_HT_DCPERIOD;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_HT_DCPHASE;
 ```
@@ -302,7 +302,7 @@ echo Trader::FUNC_UNST_HT_DCPHASE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_HT_PHASOR;
 ```
@@ -312,7 +312,7 @@ echo Trader::FUNC_UNST_HT_PHASOR;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_HT_SINE;
 ```
@@ -322,7 +322,7 @@ echo Trader::FUNC_UNST_HT_SINE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_HT_TRENDLINE;
 ```
@@ -332,7 +332,7 @@ echo Trader::FUNC_UNST_HT_TRENDLINE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_HT_TRENDMODE;
 ```
@@ -342,7 +342,7 @@ echo Trader::FUNC_UNST_HT_TRENDMODE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_KAMA;
 ```
@@ -352,7 +352,7 @@ echo Trader::FUNC_UNST_KAMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_MAMA;
 ```
@@ -362,7 +362,7 @@ echo Trader::FUNC_UNST_MAMA;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_MFI;
 ```
@@ -372,7 +372,7 @@ echo Trader::FUNC_UNST_MFI;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_MINUS_DI;
 ```
@@ -382,7 +382,7 @@ echo Trader::FUNC_UNST_MINUS_DI;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_MINUS_DM;
 ```
@@ -392,7 +392,7 @@ echo Trader::FUNC_UNST_MINUS_DM;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_NATR;
 ```
@@ -402,7 +402,7 @@ echo Trader::FUNC_UNST_NATR;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_PLUS_DI;
 ```
@@ -412,7 +412,7 @@ echo Trader::FUNC_UNST_PLUS_DI;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_PLUS_DM;
 ```
@@ -422,7 +422,7 @@ echo Trader::FUNC_UNST_PLUS_DM;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_RSI;
 ```
@@ -432,7 +432,7 @@ echo Trader::FUNC_UNST_RSI;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_STOCHRSI;
 ```
@@ -442,7 +442,7 @@ echo Trader::FUNC_UNST_STOCHRSI;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_T3;
 ```
@@ -452,7 +452,7 @@ echo Trader::FUNC_UNST_T3;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_ALL;
 ```
@@ -462,7 +462,7 @@ echo Trader::FUNC_UNST_ALL;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::FUNC_UNST_NONE;
 ```
@@ -472,7 +472,7 @@ echo Trader::FUNC_UNST_NONE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::COMPATIBILITY_DEFAULT;
 ```
@@ -482,7 +482,7 @@ echo Trader::COMPATIBILITY_DEFAULT;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::COMPATIBILITY_METASTOCK;
 ```
@@ -492,7 +492,7 @@ echo Trader::COMPATIBILITY_METASTOCK;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_SUCCESS;
 ```
@@ -502,7 +502,7 @@ echo Trader::ERR_SUCCESS;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_LIB_NOT_INITIALIZE;
 ```
@@ -512,7 +512,7 @@ echo Trader::ERR_LIB_NOT_INITIALIZE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_BAD_PARAM;
 ```
@@ -522,7 +522,7 @@ echo Trader::ERR_BAD_PARAM;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_ALLOC_ERR;
 ```
@@ -532,7 +532,7 @@ echo Trader::ERR_ALLOC_ERR;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_GROUP_NOT_FOUND;
 ```
@@ -542,7 +542,7 @@ echo Trader::ERR_GROUP_NOT_FOUND;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_FUNC_NOT_FOUND;
 ```
@@ -552,7 +552,7 @@ echo Trader::ERR_FUNC_NOT_FOUND;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_INVALID_HANDLE;
 ```
@@ -562,7 +562,7 @@ echo Trader::ERR_INVALID_HANDLE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_INVALID_PARAM_HOLDER;
 ```
@@ -572,7 +572,7 @@ echo Trader::ERR_INVALID_PARAM_HOLDER;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_INVALID_PARAM_HOLDER_TYPE;
 ```
@@ -582,7 +582,7 @@ echo Trader::ERR_INVALID_PARAM_HOLDER_TYPE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_INVALID_PARAM_FUNCTION;
 ```
@@ -592,7 +592,7 @@ echo Trader::ERR_INVALID_PARAM_FUNCTION;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_INPUT_NOT_ALL_INITIALIZE;
 ```
@@ -602,7 +602,7 @@ echo Trader::ERR_INPUT_NOT_ALL_INITIALIZE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_OUTPUT_NOT_ALL_INITIALIZE;
 ```
@@ -612,7 +612,7 @@ echo Trader::ERR_OUTPUT_NOT_ALL_INITIALIZE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_OUT_OF_RANGE_START_INDEX;
 ```
@@ -622,7 +622,7 @@ echo Trader::ERR_OUT_OF_RANGE_START_INDEX;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_OUT_OF_RANGE_END_INDEX;
 ```
@@ -632,7 +632,7 @@ echo Trader::ERR_OUT_OF_RANGE_END_INDEX;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_INVALID_LIST_TYPE;
 ```
@@ -642,7 +642,7 @@ echo Trader::ERR_INVALID_LIST_TYPE;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_BAD_OBJECT;
 ```
@@ -652,7 +652,7 @@ echo Trader::ERR_BAD_OBJECT;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_NOT_SUPPORTED;
 ```
@@ -662,7 +662,7 @@ echo Trader::ERR_NOT_SUPPORTED;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_INTERNAL_ERROR;
 ```
@@ -672,7 +672,7 @@ echo Trader::ERR_INTERNAL_ERROR;
 ``` php
 <?php
 
-use Laratrade\Trader\Contracts\Trader;
+use Nasyrov\Laravel\Trader\Contracts\Trader;
 
 echo Trader::ERR_UNKNOWN_ERROR;
 ```
