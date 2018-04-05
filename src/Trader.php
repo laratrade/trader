@@ -1838,12 +1838,11 @@ class Trader implements TraderContract
     /**
      * Hilbert Transform - Phasor Components.
      *
-     * @param array $open  Opening price, array of real values.
-     * @param array $close Closing price, array of real values.
+     * @param array $open Opening price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */
-    public function ht_phasor(array $open, array $close): array
+    public function ht_phasor(array $open): array
     {
         $result = trader_ht_phasor($open, $close);
 
@@ -1856,13 +1855,12 @@ class Trader implements TraderContract
      * Hilbert Transform - Phasor Components.
      *
      * @param array $open  Opening price, array of real values.
-     * @param array $close Closing price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */
-    public function ht_sine(array $open, array $close): array
+    public function ht_sine(array $open): array
     {
-        $result = trader_ht_sine($open, $close);
+        $result = trader_ht_sine($open);
 
         $this->handleErrors();
 

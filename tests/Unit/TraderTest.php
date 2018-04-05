@@ -920,22 +920,18 @@ class TraderTest extends TestCase
     /** @test */
     public function it_executes_ht_phasor_correctly()
     {
-        $inPhase1 = [];
-        $inPhase2 = [];
         $this->assertEquals(
-            trader_ht_phasor(static::$close, $inPhase1),
-            static::$trader->ht_phasor(static::$close, $inPhase2)
+            trader_ht_phasor(static::$close),
+            static::$trader->ht_phasor(static::$close)
         );
     }
 
     /** @test */
     public function it_executes_ht_sine_correctly()
     {
-        $sine1 = [];
-        $sine2 = [];
         $this->assertEquals(
-            trader_ht_sine(static::$close, $sine1),
-            static::$trader->ht_sine(static::$close, $sine2)
+            trader_ht_sine(static::$close),
+            static::$trader->ht_sine(static::$close)
         );
     }
 

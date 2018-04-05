@@ -1230,21 +1230,19 @@ interface Trader
      * Hilbert Transform - Phasor Components.
      *
      * @param array $open  Opening price, array of real values.
-     * @param array $close Closing price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */
-    public function ht_phasor(array $open, array $close): array;
+    public function ht_phasor(array $open): array;
 
     /**
      * Hilbert Transform - Phasor Components.
      *
      * @param array $open  Opening price, array of real values.
-     * @param array $close Closing price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */
-    public function ht_sine(array $open, array $close): array;
+    public function ht_sine(array $open): array;
 
     /**
      * Hilbert Transform - Instantaneous Trendline.
