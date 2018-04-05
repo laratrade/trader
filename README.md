@@ -1,4 +1,4 @@
-# Laratrade Trader
+# Laravel Trader
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -22,7 +22,7 @@ Make sure all dependencies have been installed before moving on:
 Pull the package via Composer:
 
 ``` bash
-$ composer require laratrade/trader
+$ composer require nasyrov/laravel-trader
 ```
 
 ## Usage
@@ -2003,16 +2003,16 @@ If you discover any security related issues, please use the issue tracker.
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/laratrade/trader.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/nasyrov/laravel-trader.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/laratrade/trader/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/laratrade/trader.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/laratrade/trader.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/laratrade/trader.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/nasyrov/laravel-trader/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/nasyrov/laravel-trader.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/nasyrov/laravel-trader.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/nasyrov/laravel-trader.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/laratrade/trader
-[link-travis]: https://travis-ci.org/laratrade/trader
-[link-scrutinizer]: https://scrutinizer-ci.com/g/laratrade/trader/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/laratrade/trader
-[link-downloads]: https://packagist.org/packages/laratrade/trader
+[link-packagist]: https://packagist.org/packages/nasyrov/laravel-trader
+[link-travis]: https://travis-ci.org/nasyrov/laravel-trader
+[link-scrutinizer]: https://scrutinizer-ci.com/g/nasyrov/laravel-trader/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/nasyrov/laravel-trader
+[link-downloads]: https://packagist.org/packages/nasyrov/laravel-trader
 [link-contributors]: ../../contributors
