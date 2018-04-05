@@ -1844,7 +1844,7 @@ class Trader implements TraderContract
      */
     public function ht_phasor(array $open): array
     {
-        $result = trader_ht_phasor($open, $close);
+        $result = trader_ht_phasor($open);
 
         $this->handleErrors();
 
