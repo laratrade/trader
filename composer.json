@@ -1,12 +1,12 @@
 {
-    "name": "laratrade/trader",
+    "name": "nasyrov/laravel-trader",
     "type": "library",
     "description": "Laravel package for trader extension interface.",
     "keywords": [
         "laravel",
         "trader"
     ],
-    "homepage": "https://github.com/laratrade/trader",
+    "homepage": "https://github.com/nasyrov/laravel-trader",
     "license": "MIT",
     "authors": [
         {
@@ -31,12 +31,12 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Laratrade\\Trader\\": "src"
+            "Nasyrov\\Laravel\\Trader\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laratrade\\Trader\\Tests\\": "tests"
+            "Nasyrov\\Laravel\\Trader\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -53,7 +53,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Laratrade\\Trader\\TraderServiceProvider"
+                "Nasyrov\\Laravel\\Trader\\TraderServiceProvider"
             ]
         }
     },
