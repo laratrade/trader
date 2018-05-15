@@ -1229,7 +1229,7 @@ interface Trader
     /**
      * Hilbert Transform - Phasor Components.
      *
-     * @param array $open  Opening price, array of real values.
+     * @param array $open Opening price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */
@@ -1238,7 +1238,7 @@ interface Trader
     /**
      * Hilbert Transform - Phasor Components.
      *
-     * @param array $open  Opening price, array of real values.
+     * @param array $open Opening price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */
