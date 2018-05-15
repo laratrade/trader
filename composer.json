@@ -1,12 +1,13 @@
 {
-    "name": "nasyrov/laravel-trader",
+    "name": "laratrade/trader",
     "type": "library",
     "description": "Laravel package for trader extension interface.",
     "keywords": [
+        "laratrade",
         "laravel",
         "trader"
     ],
-    "homepage": "https://github.com/nasyrov/laravel-trader",
+    "homepage": "https://github.com/laratrade/trader",
     "license": "MIT",
     "authors": [
         {
