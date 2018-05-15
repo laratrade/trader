@@ -32,12 +32,12 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Nasyrov\\Laravel\\Trader\\": "src"
+            "Laratrade\\Trader\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nasyrov\\Laravel\\Trader\\Tests\\": "tests"
+            "Laratrade\\Trader\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,7 +54,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nasyrov\\Laravel\\Trader\\TraderServiceProvider"
+                "Laratrade\\Trader\\TraderServiceProvider"
             ]
         }
     },

@@ -1,10 +1,10 @@
 <?php
 
-namespace Nasyrov\Laravel\Trader\Tests\Integration\Facades;
+namespace Laratrade\Trader\Tests\Integration\Facades;
 
-use Nasyrov\Laravel\Trader\Facades\Trader as TraderFacade;
-use Nasyrov\Laravel\Trader\Tests\Integration\TestCase;
-use Nasyrov\Laravel\Trader\Trader;
+use Laratrade\Trader\Facades\Trader as TraderFacade;
+use Laratrade\Trader\Tests\Integration\TestCase;
+use Laratrade\Trader\Trader;
 
 class TraderTest extends TestCase
 {

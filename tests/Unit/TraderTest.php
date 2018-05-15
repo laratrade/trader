@@ -1,9 +1,9 @@
 <?php
 
-namespace Nasyrov\Laravel\Trader\Tests\Unit;
+namespace Laratrade\Trader\Tests\Unit;
 
 use BadFunctionCallException;
-use Nasyrov\Laravel\Trader\Trader;
+use Laratrade\Trader\Trader;
 use ReflectionClass;
 
 class TraderTest extends TestCase
