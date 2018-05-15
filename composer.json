@@ -45,10 +45,10 @@
         "phpunit": "phpunit",
         "phpunit-integration": "phpunit --testsuite Integration",
         "phpunit-unit": "phpunit --testsuite Unit",
-        "phpunit-coverage": "phpunit --coverage-clover=coverage.clover",
+        "phpunit-coverage": "phpunit --testdox --coverage-clover=coverage.clover",
         "test": [
             "@lint",
-            "@phpunit"
+            "@phpunit-coverage"
         ]
     },
     "extra": {

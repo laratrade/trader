@@ -17,8 +17,7 @@ before_script:
     - composer update --no-interaction --prefer-dist
 
 script:
-    - composer lint
-    - composer phpunit-coverage
+    - composer test
 
 after_script:
     - wget https://scrutinizer-ci.com/ocular.phar
