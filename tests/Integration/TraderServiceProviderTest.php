@@ -1,9 +1,9 @@
 <?php
 
-namespace Nasyrov\Laravel\Trader\Tests\Integration;
+namespace Laratrade\Trader\Tests\Integration;
 
-use Nasyrov\Laravel\Trader\Contracts\Trader as TraderContract;
-use Nasyrov\Laravel\Trader\Trader;
+use Laratrade\Trader\Contracts\Trader as TraderContract;
+use Laratrade\Trader\Trader;
 
 class TraderServiceProviderTest extends TestCase
 {

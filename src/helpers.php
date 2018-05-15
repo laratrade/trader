@@ -1,6 +1,6 @@
 <?php
 
-use Nasyrov\Laravel\Trader\Contracts\Trader as TraderContract;
+use Laratrade\Trader\Contracts\Trader as TraderContract;
 
 if (!function_exists('trader')) {
     /**

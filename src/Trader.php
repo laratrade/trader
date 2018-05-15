@@ -1,13 +1,13 @@
 <?php
 
-namespace Nasyrov\Laravel\Trader;
+namespace Laratrade\Trader;
 
 use BadFunctionCallException;
-use Nasyrov\Laravel\Trader\Contracts\Trader as TraderContract;
+use Laratrade\Trader\Contracts\Trader as TraderContract;
 
 /**
  * Class Trader
- * @package Nasyrov\Laravel\Trader
+ * @package Laratrade\Trader
  *
  * phpcs:disable Generic.Files.LineLength
  * phpcs:disable PSR1.Methods.CamelCapsMethodName
@@ -1854,7 +1854,7 @@ class Trader implements TraderContract
     /**
      * Hilbert Transform - Phasor Components.
      *
-     * @param array $open  Opening price, array of real values.
+     * @param array $open Opening price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */

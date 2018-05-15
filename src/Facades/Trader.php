@@ -1,13 +1,13 @@
 <?php
 
-namespace Nasyrov\Laravel\Trader\Facades;
+namespace Laratrade\Trader\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Nasyrov\Laravel\Trader\Contracts\Trader as TraderContract;
+use Laratrade\Trader\Contracts\Trader as TraderContract;
 
 /**
  * Class Trader
- * @package Nasyrov\Laravel\Trader\Facades
+ * @package Laratrade\Trader\Facades
  *
  * @method static acos()
  * @method static ad()

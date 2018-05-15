@@ -1,12 +1,13 @@
 {
-    "name": "nasyrov/laravel-trader",
+    "name": "laratrade/trader",
     "type": "library",
     "description": "Laravel package for trader extension interface.",
     "keywords": [
+        "laratrade",
         "laravel",
         "trader"
     ],
-    "homepage": "https://github.com/nasyrov/laravel-trader",
+    "homepage": "https://github.com/laratrade/trader",
     "license": "MIT",
     "authors": [
         {
@@ -17,7 +18,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.1.0",
         "ext-trader": "*",
         "illuminate/support": "5.5.*|5.6.*"
     },
@@ -31,12 +32,12 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Nasyrov\\Laravel\\Trader\\": "src"
+            "Laratrade\\Trader\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nasyrov\\Laravel\\Trader\\Tests\\": "tests"
+            "Laratrade\\Trader\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,16 +45,16 @@
         "phpunit": "phpunit",
         "phpunit-integration": "phpunit --testsuite Integration",
         "phpunit-unit": "phpunit --testsuite Unit",
-        "phpunit-coverage": "phpunit --coverage-clover=coverage.clover",
+        "phpunit-coverage": "phpunit --testdox --coverage-clover=coverage.clover",
         "test": [
             "@lint",
-            "@phpunit"
+            "@phpunit-coverage"
         ]
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Nasyrov\\Laravel\\Trader\\TraderServiceProvider"
+                "Laratrade\\Trader\\TraderServiceProvider"
             ]
         }
     },

@@ -1,10 +1,10 @@
 <?php
 
-namespace Nasyrov\Laravel\Trader\Contracts;
+namespace Laratrade\Trader\Contracts;
 
 /**
  * Interface Trader
- * @package Nasyrov\Laravel\Trader\Contracts
+ * @package Laratrade\Trader\Contracts
  *
  * phpcs:disable Generic.Files.LineLength
  * phpcs:disable PSR1.Methods.CamelCapsMethodName
@@ -1229,7 +1229,7 @@ interface Trader
     /**
      * Hilbert Transform - Phasor Components.
      *
-     * @param array $open  Opening price, array of real values.
+     * @param array $open Opening price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */
@@ -1238,7 +1238,7 @@ interface Trader
     /**
      * Hilbert Transform - Phasor Components.
      *
-     * @param array $open  Opening price, array of real values.
+     * @param array $open Opening price, array of real values.
      *
      * @return array Returns an array with calculated data.
      */
