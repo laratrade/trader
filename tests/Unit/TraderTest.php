@@ -41,7 +41,7 @@ class TraderTest extends TestCase
     /**
      * @inheritdoc
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         $ohlcv = json_decode(file_get_contents(
             __DIR__ . '/ohlcv.json'
